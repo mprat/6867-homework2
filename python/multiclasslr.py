@@ -26,15 +26,6 @@ def nll_multiclass(x, y, alphas, w0, c, l, kernel_func):
 	
 	# print np.sum(first_part)
 
-	first_part = np.empty(len(x))
-	index = 0
-	for i in range(len(x)):
-		y_i = y[i]
-		first_part[index] = np.sum(np.dot(kernel_func(x, x[i]), y_i * alphas) + len(x[i]) * w0)
-		index += 1
-
-	# print np.sum(first_part)
-
 	# first_part2 = np.empty(len(x) * c)
 	# index = 0
 	# for i in range(len(x)):
@@ -48,26 +39,57 @@ def nll_multiclass(x, y, alphas, w0, c, l, kernel_func):
 
 	# print np.sum(first_part2)
 
-
-	second_part = np.empty(len(x))
+	first_part = np.empty(len(x))
 	index = 0
 	for i in range(len(x)):
 		y_i = y[i]
-		outer_outer_sum = 0
-		for c_index_o in range(c):
-			y_ic = y_i[c_index_o]
-			outer_sum = 0
-			for c_index_i in range(c):
-				inner_sum = 0
-				w0c = w0[c_index_i]
-				for j in range(len(x)):
-					alpha_cij = alphas[j, c_index_i]
-					inner_sum += alpha_cij * kernel_func(x[j], x[i]) + w0c
-				outer_sum += np.exp(inner_sum)
-			# print "os = ", outer_sum
-			outer_outer_sum += y_ic * np.log(outer_sum)
-		second_part[index] = outer_outer_sum
+		first_part[index] = np.sum(np.dot(kernel_func(x, x[i]), y_i * alphas) + len(x[i]) * w0)
 		index += 1
+
+	# print np.sum(first_part)
+
+	# second_part = np.empty(len(x))
+	# index = 0
+	# for i in range(len(x)):
+	# 	y_i = y[i]
+	# 	outer_outer_sum = 0
+	# 	for c_index_o in range(c):
+	# 		y_ic = y_i[c_index_o]
+	# 		outer_sum = 0
+	# 		for c_index_i in range(c):
+	# 			inner_sum = 0
+	# 			w0c = w0[c_index_i]
+	# 			for j in range(len(x)):
+	# 				alpha_cij = alphas[j, c_index_i]
+	# 				inner_sum += alpha_cij * kernel_func(x[j], x[i]) + w0c
+	# 			outer_sum += np.exp(inner_sum)
+	# 		# print "os = ", outer_sum
+	# 		outer_outer_sum += y_ic * np.log(outer_sum)
+	# 	second_part[index] = outer_outer_sum
+	# 	index += 1
+
+	# print np.sum(second_part)
+
+	second_part = np.empty(len(x))
+	for i in range(len(x)):
+		y_i = y[i]
+		second_part[i] = np.sum(y_i * np.log(np.sum(np.exp(np.dot(kernel_func(x, x[i]), alphas) + len(x) * w0))))
+		# for c_index_o in range(c):
+			# y_ic = y_i[c_index_o]
+			# outer_sum = 0
+			# for c_index_i in range(c):
+			# 	inner_sum = 0
+			# 	w0c = w0[c_index_i]
+			# 	for j in range(len(x)):
+			# 		alpha_cij = alphas[j, c_index_i]
+			# 		inner_sum += alpha_cij * kernel_func(x[j], x[i]) + w0c
+			# 	outer_sum += np.exp(inner_sum)
+			# print "os = ", outer_sum
+			# outer_outer_sum += y_ic * np.log(outer_sum)
+		# second_part[index] = outer_outer_sum
+		# index += 1
+
+	# print np.sum(second_part2)
 
 	return -1*np.sum(first_part) + np.sum(second_part) + l * np.linalg.norm(alphas, 2)
 
@@ -140,14 +162,17 @@ def transform_y(y, c):
 
 def predictor(alphas, w0, kernel_func, x):
 	predictions = np.empty((len(x), alphas.shape[1]))
-	for c_index in range(alphas.shape[1]):
-		alpha_c = alphas[:, c_index]
-		w0c = w0[c_index]
-		for i in range(len(x)):
-			predictions[i][c_index] = np.exp(np.sum(alpha_c * kernel_func(x, x[i]) + w0c))
+	# for c_index in range(alphas.shape[1]):
+	# 	alpha_c = alphas[:, c_index]
+	# 	w0c = w0[c_index]
+	# 	for i in range(len(x)):
+	# 		predictions[i][c_index] = np.exp(np.sum(alpha_c * kernel_func(x, x[i]) + w0c))
 
-	print predictions
-	predictions = predictions / np.sum(predictions, axis=1).reshape((-1, 1))
+	for i in range(len(x)):
+		predictions[i] = np.dot(kernel_func(x, x[i]), alphas) + len(x)*w0
+
+	# print predictions
+	# predictions = predictions / np.sum(predictions, axis=1).reshape((-1, 1))
 	max_args = np.argmax(predictions, axis = 1)
 
 	class_pred = np.zeros(predictions.shape)
@@ -280,7 +305,12 @@ if kaggle:
 else:
 	name = 'smallOverlap'
 	train = np.loadtxt('../problemset/HW2_handout/data/data_'+name+'_train.csv')
-	test = np.loadtxt('../problemset/HW2_handout/data/data_'+name+'_train.csv')
+	test = np.loadtxt('../problemset/HW2_handout/data/data_'+name+'_test.csv')
+
+	# name = 'small_example'
+	# train = np.loadtxt('../problemset/HW2_handout/data/'+name+'.csv')
+	# test = np.loadtxt('../problemset/HW2_handout/data/'+name+'.csv')
+
 
 	y_train = train[:, -1].copy()
 	x_train = train[:, :-1].copy()
@@ -298,7 +328,7 @@ else:
 	best_w0 = 0
 
 	# for l in [0, 1e-4, 1e-3, 1e-2, 1e-1, 0.5, 1, 10]:
-	for l in [0]:
+	for l in [0, 0.5, 1, 10]:
 		def nll_multi_train(params):
 		    x = x_train
 		    y = y_train
@@ -320,16 +350,16 @@ else:
 		# print w0
 		# predictor(alphas, w0, kernel, x_train)
 		train_predictions = predictor(alphas, w0, kernel, x_train)
-		print train_predictions
-		# # test_predictions = predictor(alphas, w0, kernel, x_test)
-		# err = error(y_train, train_predictions)
-		# print "error = ", err
-		# if err < min_val_error:
-		# 	min_error = err
-		# 	best_alphas = alphas
-		# 	best_w0 = w0
-		# 	print "smallest error with l = ", l
+		# print train_predictions
+		# test_predictions = predictor(alphas, w0, kernel, x_test)
+		err = error(y_train, train_predictions)
+		print "error = ", err
+		if err < min_val_error:
+			min_error = err
+			best_alphas = alphas
+			best_w0 = w0
+			print "smallest error with l = ", l
 
-	# test_predictions = predictor(best_alphas, best_w0, kernel, x_test)
-	# test_err = error(y_test, test_predictions)
-	# print "test error = ", test_err
+	test_predictions = predictor(best_alphas, best_w0, kernel, x_test)
+	test_err = error(y_test, test_predictions)
+	print "test error = ", test_err

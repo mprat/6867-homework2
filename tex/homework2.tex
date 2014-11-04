@@ -1,4 +1,26 @@
-\documentclass{article}
+\documentclass[10pt]{article}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+% \usepackage[margin=1.1in]{geometry}
+
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+
+\begin{document}
+
+\section{Exercise 1}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\textwidth]{exercise1-1.pdf}
+	\caption{Something}
+	\label{fig:1-1}
+\end{figure}
+
 
 1.2 - since smallOverlap was the same, took half the data for test and half for train
 
@@ -47,3 +69,5 @@ will need to plot lambda versus sparsity
 	* validation error: .143
 	* test error: .143
 	* l: 7e-7
+
+\end{document}
