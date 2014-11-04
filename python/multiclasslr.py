@@ -7,6 +7,12 @@ kaggle = False
 def linear_kernel(x1, x2):
     return np.dot(x1, x2.T)
 
+def gaussian_kernel_general(x, y, beta):
+	if len(x.shape) > 1:
+		return np.exp(-1*beta*np.linalg.norm(x - y, axis=1))
+	else:
+		return np.exp(-1*beta*np.linalg.norm(x - y))
+
 # c is number of classes
 def nll_multiclass(x, y, alphas, w0, c, l, kernel_func):
 	# first_part = np.empty(len(x) * c)
@@ -303,7 +309,7 @@ if kaggle:
 	predictions = predictor(alphas, w0, linear_kernel, x_train)
 	print "error = ", error(y_train, predictions)
 else:
-	name = 'smallOverlap'
+	name = 'stdev1'
 	train = np.loadtxt('../problemset/HW2_handout/data/data_'+name+'_train.csv')
 	test = np.loadtxt('../problemset/HW2_handout/data/data_'+name+'_test.csv')
 
@@ -323,7 +329,13 @@ else:
 	y_test = transform_y(y_test, c)
 
 	min_val_error = 100000000
-	kernel = linear_kernel
+
+	beta = 0.5
+	def gaussian(x1, x2):
+		return gaussian_kernel_general(x1, x2, beta)
+
+	kernel = gaussian
+
 	best_alphas = 0
 	best_w0 = 0
 

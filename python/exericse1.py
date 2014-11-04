@@ -14,14 +14,17 @@ def get_svm_ws(x, y, c):
     k = np.dot(x, x.T) # basically the "kernel matrix"
     # print "kernel = \n", k
     P = matrix(k * np.multiply.outer(y, y))
-    # print "P = \n", P
+    print "P = \n", P
     q = matrix(-1*np.ones(n))
-    # print "q = \n", q
+    print "q = \n", q
     G = matrix(np.concatenate((np.eye(n), -1*np.eye(n))))
-    # print "G = \n", G
+    print "G = \n", G
     h = matrix(np.concatenate((np.tile(c, n), np.tile(0, n))), tc='d')
+    print "h = \n", h
     A = matrix(y, (1, n))
+    print "A = \n", A
     b = matrix(0.0)
+    print "b = \n", b
     solvers.options['abstol'] = 1e-10
     solvers.options['reltol'] = 1e-10
     solvers.options['feastol'] = 1e-10
