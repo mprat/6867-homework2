@@ -29,3 +29,21 @@ will need to plot lambda versus sparsity
 
 3.1 - LR:
 * 2 features, 100 pts, 2 classes, l = 0.01 -> error = .485
+* might need to randomly select subsets of data points
+
+* tips for getting numerics to work better:
+	* normalize data beforehand (then don't forget to re-normalize later)
+	* 
+
+3.2 - multiclass SVM:
+* used http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html
+* can do this SO FAST it doesn't even make sense to try to do this by myself.
+* tried an array of l values with L1 loss (multiclasssvm.py), best L with random partitioning of data into 3 sets. rigorous stopping criteria
+* hinge loss, l2 regularization: 
+	* validation error: .187
+	* test error: .261
+	* l: 0.01
+* squared loss, l1 regularization:
+	* validation error: .143
+	* test error: .143
+	* l: 7e-7
