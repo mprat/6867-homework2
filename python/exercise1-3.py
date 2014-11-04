@@ -9,6 +9,12 @@ def gaussian_kernel(x, y):
     beta = 1
     return exp(-1*beta*np.linalg.norm(x - y))
 
+def gaussian_kernel_general(x, y, beta):
+	if len(x.shape) > 1:
+		return np.exp(-1*beta*np.linalg.norm(x - y, axis=1))
+	else:
+		return np.exp(-1*beta*np.linalg.norm(x - y))
+
 def file_to_x_y(filename):
     data = np.loadtxt('../problemset/HW2_handout/data/' + filename)
     y = data[:, -1] # y (class) vectors
@@ -16,7 +22,7 @@ def file_to_x_y(filename):
     return x, y
 
 def get_svm_ws(x, y, c, kernel_function):
-    n = shape(x)[0]
+    n = np.shape(x)[0]
     # print "x data = \n", data[:, :-1]
     k = kernel_function(x, x)
 #     k = np.dot(x, x.T) # basically the "kernel matrix"
@@ -40,10 +46,10 @@ def get_svm_ws(x, y, c, kernel_function):
     w = np.sum((x.T*y)*alphas.flatten(), axis=1)
     zero_thresh = 1e-8
     y = np.reshape(y, (-1, 1))
-    x_support = np.where(abs(alphas - (c + zero_thresh)/2.0) < (c - zero_thresh)/2.0, x, 0)
-    print "Number of support vectors = ", sum(abs(alphas - (c + zero_thresh)/2.0) < (c - zero_thresh)/2.0)
+    x_support = np.where(np.abs(alphas - (c + zero_thresh)/2.0) < (c - zero_thresh)/2.0, x, 0)
+    print "Number of support vectors = ", np.sum(np.abs(alphas - (c + zero_thresh)/2.0) < (c - zero_thresh)/2.0)
     k_alpha = np.dot(x_support, x.T)
-    w0 = np.array([(sum(np.where(abs(alphas - (c + zero_thresh)/2.0) < (c - zero_thresh)/2.0, y, 0)) - sum(k_alpha * y * alphas)) / sum(np.where(abs(alphas - (c + zero_thresh)/2.0) < (c - zero_thresh)/2.0))])
+    w0 = np.array([(np.sum(np.where(np.abs(alphas - (c + zero_thresh)/2.0) < (c - zero_thresh)/2.0, y, 0)) - np.sum(k_alpha * y * alphas)) / np.sum(np.where(abs(alphas - (c + zero_thresh)/2.0) < (c - zero_thresh)/2.0))])
     # print "alphas = ", alphas
     # print "w0 = ", w0
     # print "w = ", w
@@ -53,7 +59,7 @@ def to_class_func(w):
     return lambda n: w[0] + w[1] * n[0] + w[2] * n[1]
 
 def error_rate(x, y, w):
-    return sum(np.array([sign(to_class_func(w)(n)) for n in x]) != y) / float(len(x))
+    return np.sum(np.array([np.sign(to_class_func(w)(n)) for n in x]) != y) / float(len(x))
 
 def train_validate(name, c, kernel_function):
 # name = 'bigOverlap'
@@ -86,13 +92,13 @@ def train_validate(name, c, kernel_function):
     
     x_min, x_max = X_train[:, 0].min() - 1, X_train[:, 0].max() + 1
     y_min, y_max = X_train[:, 1].min() - 1, X_train[:, 1].max() + 1
-    h = max((x_max-x_min)/200., (y_max-y_min)/200.)
+    h = np.max((x_max-x_min)/200., (y_max-y_min)/200.)
     xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
                       np.arange(y_min, y_max, h))
-    zz = np.array([to_class_func(w)(x) for x in c_[np.ravel(xx), np.ravel(yy)]])
+    zz = np.array([to_class_func(w)(x) for x in np.c_[np.ravel(xx), np.ravel(yy)]])
     zz = np.reshape(zz, xx.shape)
     
-    fig = plt.figure(figsize=(12, 4))
+    fig = plt.figure(figsize=(8, 3))
     ax1 = fig.add_subplot(121)
     CS = ax1.contour(xx, yy, zz, [-1, 0, 1], colors = 'green', linestyles = 'solid', linewidths = 2)
 #     plt.clabel(CS, fontsize=9, inline=1)
@@ -100,6 +106,8 @@ def train_validate(name, c, kernel_function):
     ax1.scatter(X_train[:, 0], X_train[:, 1], c=(1.-Y_train), s=50, cmap = plt.cm.cool)
     ax1.set_title('Train')
     ax1.axis('tight')
+    ax1.set_xticks([])
+    ax1.set_yticks([])
     
     ax2 = fig.add_subplot(122)
     CS = ax2.contour(xx, yy, zz, [-1, 0, 1], colors = 'green', linestyles = 'solid', linewidths = 2)
@@ -108,9 +116,37 @@ def train_validate(name, c, kernel_function):
     ax2.scatter(X_validate[:, 0], X_validate[:, 1], c=(1.-Y_validate), s=50, cmap = plt.cm.cool)
     ax2.set_title('Validate')
     ax2.axis('tight')
+    ax2.set_xticks([])
+    ax2.set_yticks([])
 
+    plt.subplots_adjust(wspace=0)
     plt.show()
 
-def run():
+def run1_linear(dataset):
 	for c in [0.01, 0.1, 1, 10, 100]:
-    	train_validate('bigOverlap', c, linear_kernel)
+		train_validate(dataset, c, linear_kernel)
+
+def run1_gaussian(dataset):
+	# for dataset in ['smallOverlap', 'bigOverlap', 'nonSep2', 'ls']:
+    for c in [0.01, 0.1, 1, 10, 100]:
+        for beta in [0.0001, 0.001, 0.1, 0.15, 0.25]:
+            def gaussian_kernel(x, y):
+                return gaussian_kernel_general(x, y, beta)
+
+            print "==========================="
+            print "==========================="
+            print "Dataset =", dataset, " c = ", c, " beta = ", beta
+            print "==========================="
+            print "==========================="
+            train_validate(dataset, c, gaussian_kernel)
+            print
+            print
+
+def run_linear_all():
+	for dataset in ['smallOverlap', 'bigOverlap', 'nonSep2', 'ls']:
+		print "Dataset = ", dataset
+		run1_linear(dataset)
+
+def run_gaussian_all():
+	for dataset in ['smallOverlap', 'bigOverlap', 'nonSep2', 'ls']:
+		run1_gaussian(dataset)

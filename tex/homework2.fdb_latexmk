@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1415140979 "homework2.tex" "homework2.pdf" "homework2" 1415140981
+["pdflatex"] 1415144334 "homework2.tex" "homework2.pdf" "homework2" 1415144335
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
@@ -42,8 +42,8 @@
   "1-2-nonSep2.pdf" 1415140605 43243 cf4e3285f8821e623197e1f12cc73b5c ""
   "1-2-smallOverlap.pdf" 1415140507 36877 e4dec3c37cd6b238064bb537aa6e7b24 ""
   "exercise1-1.pdf" 1415133321 12156 7f78d712785e130af9b4e891876294f0 ""
-  "homework2.aux" 1415140981 1249 7a162b3f322cf3f74de5449ce1d9b7dc ""
-  "homework2.tex" 1415140979 6107 d959adb83d735a4ecaab0246f8e15493 ""
+  "homework2.aux" 1415144335 1663 3063ad12e4273c2e8a7254bb8194bdc2 ""
+  "homework2.tex" 1415144328 7895 32a3d04c9062654dbc71861bbcfe330d ""
   (generated)
   "homework2.pdf"
   "homework2.log"

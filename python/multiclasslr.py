@@ -353,7 +353,7 @@ else:
 
 		# print nll_multi_train(start)
 #
-		all_output = scipy.optimize.fmin_bfgs(nll_multi_train, start, full_output=True, gtol=1e-12)
+		all_output = scipy.optimize.fmin_bfgs(nll_multi_train, start, full_output=True, gtol=1e-12, maxiter=2)
 		alphas_and_w0 = all_output[0]
 		alphas_and_w0 = alphas_and_w0.reshape((-1, c))
 		alphas = alphas_and_w0[:-1]

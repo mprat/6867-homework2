@@ -136,7 +136,7 @@ Setting $C = 1$,
 	\label{fig:1-2-nonSep2}
 \end{figure}
 
-The error rates for the training and validation sets is shown in Table \ref{tbl:1-2-error}.
+The error rates for the training and validation sets for different data sets is shown in Table \ref{tbl:1-2-error}. If a data set did not come with a training / validation set pair, the dataset was randomly cut in half for each class to use as training and validation. In general, the more separable the data set is, the better the slack-variable SVM without a regularizer does. In the non-separable case, depending on the nature of the inseparability, the solution has a higher error rate.
 
 \begin{table}
 \centering
@@ -147,13 +147,48 @@ The error rates for the training and validation sets is shown in Table \ref{tbl:
 	ls & $0$ & $0.00375$ \\
 	nonSep2 & $.485$ & $.495$ 
 \end{tabular}
-\caption{Error rates for training and validation sets}
+\caption{Error rates for training and validation sets, $C = 1$, linear kernel}
 \label{tbl:1-2-error}
 \end{table}
 
-1.2 - since smallOverlap was the same, took half the data for test and half for train
+\begin{table}
+\centering
+\begin{tabular}{c|c|c|c|c|c}
+Dataset 	 &	 $C$  & Geometric Margin & Support Vectors & Training & Validation \\ \hline
+smallOverlap & $0.01$ 	& $1.79$		& 70 			& $.26$ & $.25$ \\
+			& $0.1$		& $.93$			& 37		& $.25$ & $.24$ \\
+			& $1$		& $.57$			& 24		& $.24$ & $.24$ \\
+			& $10$		& $.5611$		& 22 		& $.25$ & $.24$ \\
+			& $100$ 	& $.5613$		& 23		& $.25$ & $.24$ \\
+bigOverlap & $0.01$ 	& $2.38$		& 148 		& $.30$ & $.25$ \\
+			& $0.1$		& $1.93$		& 131		& $.31$ & $.26$ \\
+			& $1$		& $1.88$		& 128		& $.31$ & $.26$ \\
+			& $10$		& $1.88$		& 128 		& $.31$ & $.26$ \\
+			& $100$ 	& $1.88$		& 129		& $.31$ & $.26$ \\
+ls 			& $0.01$ 	& $.939$		& 177		& $.02$ & $.02$ \\
+			& $0.1$		& $.48 $		& 56		& $0  $ & $.005$ \\
+			& $1$		& $.31$	 		& 13		& $0  $ & $.004$ \\
+			& $10$		& $.23$			& 3 		& $0 $ & $.005$ \\
+			& $100$ 	& $.23$			& 31		& $0 $ & $.005$ \\
+nonSep2 	& $0.01$ 	& $3.98$		& 399 		& $.48$ & $.50$ \\
+			& $0.1$		& $3.37$		& 393		& $.49$ & $.50$ \\
+			& $1$		& $3.29$		& 392		& $.49$ & $.50$ \\
+			& $10$		& $3.29$		& 392		& $.49$ & $.50$ \\
+			& $100$ 	& $3.29$		& 393		& $.49$ & $.49$ \\
+\end{tabular}
+\caption{Error rates for training and validation sets with varying $C$, linear kernel}
+\label{tbl:1-3-linear}
+\end{table}
 
 
+\begin{table}
+\centering
+\begin{tabular}{c|c|c|c}
+
+\end{tabular}
+\caption{Error rates for training and validation sets with varying $C$, gaussian kernel}
+\label{tbl:1-3-gaussian}
+\end{table}
 
 2.2: 
 * do training set over some values of lambda
