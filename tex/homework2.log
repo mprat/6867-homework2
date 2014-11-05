@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 NOV 2014 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  5 NOV 2014 18:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -330,52 +330,74 @@ Overfull \hbox (54.29048pt too wide) in paragraph at lines 112--129
  [][] 
  []
 
-<1-2-smallOverlap.pdf, id=14, 578.16pt x 216.81pt>
-File: 1-2-smallOverlap.pdf Graphic file (type pdf)
- <use 1-2-smallOverlap.pdf>
-Package pdftex.def Info: 1-2-smallOverlap.pdf used on input line 138.
-(pdftex.def)             Requested size: 209.4411pt x 78.53784pt.
+<1-3-stdev1-1-0_15.pdf, id=14, 462.52798pt x 203.60127pt>
+File: 1-3-stdev1-1-0_15.pdf Graphic file (type pdf)
 
-<1-2-bigOverlap.pdf, id=15, 578.16pt x 216.81pt>
-File: 1-2-bigOverlap.pdf Graphic file (type pdf)
- <use 1-2-bigOverlap.pdf>
-Package pdftex.def Info: 1-2-bigOverlap.pdf used on input line 144.
-(pdftex.def)             Requested size: 209.4411pt x 78.53784pt.
+<use 1-3-stdev1-1-0_15.pdf>
+Package pdftex.def Info: 1-3-stdev1-1-0_15.pdf used on input line 138.
+(pdftex.def)             Requested size: 167.55351pt x 73.75618pt.
 
-<1-2-ls.pdf, id=16, 578.16pt x 216.81pt>
+<1-3-stdev2-10-0_15.pdf, id=15, 462.52798pt x 203.60127pt>
+File: 1-3-stdev2-10-0_15.pdf Graphic file (type pdf)
+
+<use 1-3-stdev2-10-0_15.pdf>
+Package pdftex.def Info: 1-3-stdev2-10-0_15.pdf used on input line 144.
+(pdftex.def)             Requested size: 167.55351pt x 73.75618pt.
+ <1-2-ls.pdf, id=16, 578.16pt x 216.81pt>
 File: 1-2-ls.pdf Graphic file (type pdf)
- <use 1-2-ls.pdf>
+
+<use 1-2-ls.pdf>
 Package pdftex.def Info: 1-2-ls.pdf used on input line 151.
 (pdftex.def)             Requested size: 209.4411pt x 78.53784pt.
-
-<1-2-nonSep2.pdf, id=17, 578.16pt x 216.81pt>
+ <1-2-nonSep2.pdf, id=17, 578.16pt x 216.81pt>
 File: 1-2-nonSep2.pdf Graphic file (type pdf)
- <use 1-2-nonSep2.pdf>
+
+<use 1-2-nonSep2.pdf>
 Package pdftex.def Info: 1-2-nonSep2.pdf used on input line 157.
 (pdftex.def)             Requested size: 209.4411pt x 78.53784pt.
-
-<1-3-c-margin.pdf, id=18, 578.16pt x 433.62pt>
+ <1-3-c-margin.pdf, id=18, 578.16pt x 433.62pt>
 File: 1-3-c-margin.pdf Graphic file (type pdf)
- <use 1-3-c-margin.pdf>
+
+<use 1-3-c-margin.pdf>
 Package pdftex.def Info: 1-3-c-margin.pdf used on input line 171.
 (pdftex.def)             Requested size: 209.4411pt x 157.0757pt.
-
-<1-3-support-vectors.pdf, id=19, 578.16pt x 433.62pt>
+ <1-3-support-vectors.pdf, id=19, 578.16pt x 433.62pt>
 File: 1-3-support-vectors.pdf Graphic file (type pdf)
 
 <use 1-3-support-vectors.pdf>
 Package pdftex.def Info: 1-3-support-vectors.pdf used on input line 177.
 (pdftex.def)             Requested size: 209.4411pt x 157.0757pt.
  [2 <./exercise1-1.pdf>]
-Overfull \hbox (104.33997pt too wide) in paragraph at lines 211--215
-[]\OT1/cmr/m/n/10 3.1: * https://piazza.com/class/hzdfawvtilo7hf?cid=434 * l2 r
-eg-u-lar-iza-tion, lin-ear case * http://blog.datumbox.com/machine-
- []
+<exercise2-3-stdev4-linear.pdf, id=49, 578.16pt x 433.62pt>
+File: exercise2-3-stdev4-linear.pdf Graphic file (type pdf)
 
-[3 <./1-2-smallOverlap.pdf> <./1-2-bigOverlap.pdf
+<use exercise2-3-stdev4-linear.pdf>
+Package pdftex.def Info: exercise2-3-stdev4-linear.pdf used on input line 201.
+(pdftex.def)             Requested size: 209.4411pt x 157.0757pt.
 
-pdfTeX warning: pdflatex (file ./1-2-bigOverlap.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
+<exercise2-3-stdev4-gaussian.pdf, id=50, 578.16pt x 433.62pt>
+File: exercise2-3-stdev4-gaussian.pdf Graphic file (type pdf)
+
+<use exercise2-3-stdev4-gaussian.pdf>
+Package pdftex.def Info: exercise2-3-stdev4-gaussian.pdf used on input line 207
+.
+(pdftex.def)             Requested size: 209.4411pt x 157.0757pt.
+
+<exercise2-2.pdf, id=51, 578.16pt x 433.62pt>
+File: exercise2-2.pdf Graphic file (type pdf)
+ <use exercise2-2.pdf>
+Package pdftex.def Info: exercise2-2.pdf used on input line 218.
+(pdftex.def)             Requested size: 209.4411pt x 157.0757pt.
+
+<exercise2-4.pdf, id=52, 578.16pt x 433.62pt>
+File: exercise2-4.pdf Graphic file (type pdf)
+ <use exercise2-4.pdf>
+Package pdftex.def Info: exercise2-4.pdf used on input line 224.
+(pdftex.def)             Requested size: 209.4411pt x 157.0757pt.
+ [3 <./1-3-stdev1-1-0_15.pdf> <./1-3-stdev2-10-0_15.pdf
+
+pdfTeX warning: pdflatex (file ./1-3-stdev2-10-0_15.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
 > <./1-2-ls.pdf
 
 pdfTeX warning: pdflatex (file ./1-2-ls.pdf): PDF inclusion: multiple pdfs with
@@ -393,17 +415,35 @@ s with page group included in a single page
 pdfTeX warning: pdflatex (file ./1-3-support-vectors.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
-Overfull \hbox (13.72858pt too wide) in paragraph at lines 229--241
+Overfull \hbox (89.33997pt too wide) in paragraph at lines 240--244
+\OT1/cmr/m/n/10 3.1: * https://piazza.com/class/hzdfawvtilo7hf?cid=434 * l2 reg
+-u-lar-iza-tion, lin-ear case * http://blog.datumbox.com/machine-
+ []
+
+[4 <./exercise2-3-stdev4-linear.pdf> <./exercise2-3-stdev4-gaussian.pdf
+
+pdfTeX warning: pdflatex (file ./exercise2-3-stdev4-gaussian.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+> <./exercise2-2.pdf
+
+pdfTeX warning: pdflatex (file ./exercise2-2.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <./exercise2-4.pdf
+
+pdfTeX warning: pdflatex (file ./exercise2-4.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+>]
+Overfull \hbox (13.72858pt too wide) in paragraph at lines 258--270
 []\OT1/cmr/m/n/10 3.2 - mul-ti-class svm: * used http://scikit-learn.org/stable
 /modules/generated/sklearn.svm.linearsvc.html
  []
 
-[4] (./homework2.aux) ) 
+[5] (./homework2.aux) ) 
 Here is how much of TeX's memory you used:
- 3993 strings out of 493117
- 60368 string characters out of 6135433
- 136894 words of memory out of 5000000
- 7407 multiletter control sequences out of 15000+600000
+ 4022 strings out of 493117
+ 61057 string characters out of 6135433
+ 137970 words of memory out of 5000000
+ 7432 multiletter control sequences out of 15000+600000
  6972 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,38p,1149b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -423,11 +463,12 @@ cmr5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on homework2.pdf (4 pages, 423393 bytes).
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on homework2.pdf (5 pages, 530995 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 282 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

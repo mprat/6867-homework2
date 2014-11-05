@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1415160971 "homework2.tex" "homework2.pdf" "homework2" 1415201119
+["pdflatex"] 1415230996 "homework2.tex" "homework2.pdf" "homework2" 1415230997
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
@@ -38,15 +38,19 @@
   "/usr/local/texlive/2014/texmf-dist/tex/latex/tools/enumerate.sty" 1399675188 3255 42d834dc82171769c16badd22df87021 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty" 1400196978 6922 d73f54a1f22489be96930629013f1304 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1137111090 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "1-2-bigOverlap.pdf" 1415140534 38866 a8ff0295fd2fc5ba68f755b85b0873d5 ""
   "1-2-ls.pdf" 1415140577 47273 d587709f6466b1a2ad78b073d3ba0008 ""
   "1-2-nonSep2.pdf" 1415140605 43243 cf4e3285f8821e623197e1f12cc73b5c ""
-  "1-2-smallOverlap.pdf" 1415140507 36877 e4dec3c37cd6b238064bb537aa6e7b24 ""
   "1-3-c-margin.pdf" 1415156494 116395 ef28c25d190bc0855e2da099789387e9 ""
+  "1-3-stdev1-1-0_15.pdf" 1415155015 56042 6bf9a135267887831db3d8845ac6bacb ""
+  "1-3-stdev2-10-0_15.pdf" 1415155050 52691 935414c3035f0bf6324f7b0380205f91 ""
   "1-3-support-vectors.pdf" 1415157619 116270 731497ab571996bf7f8cf98687ab1ee6 ""
   "exercise1-1.pdf" 1415133321 12156 7f78d712785e130af9b4e891876294f0 ""
-  "homework2.aux" 1415160972 1098 acae8836ee5a0252c27c3dbc76c87bf1 ""
-  "homework2.tex" 1415201118 9470 e964772e30a370cad124f5aa9076eb2c ""
+  "exercise2-2.pdf" 1415229403 178069 a2ef99a41b07351100c28c0e1238c681 ""
+  "exercise2-3-stdev4-gaussian.pdf" 1415228328 11881 e59dc56ef28ad68d5530aeda49e728ba ""
+  "exercise2-3-stdev4-linear.pdf" 1415228623 9987 a0c262319c1f72640e55ca79e24ef477 ""
+  "exercise2-4.pdf" 1415230431 177843 4a61cf9be35c7a4d25fb82875d09c0b0 ""
+  "homework2.aux" 1415230997 1497 0bfec52fd805ed6788b1cad47e70e45c ""
+  "homework2.tex" 1415230996 12664 5e5abae177f4b18402c9ffda4faf5260 ""
   (generated)
   "homework2.pdf"
   "homework2.log"

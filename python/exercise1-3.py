@@ -150,5 +150,5 @@ def run_linear_all():
 		run1_linear(dataset)
 
 # def run_gaussian_all():
-for dataset in ['smallOverlap', 'bigOverlap', 'nonSep2', 'ls', 'stdev1', 'stdev2']:
-	run1_gaussian(dataset)
+# for dataset in ['smallOverlap', 'bigOverlap', 'nonSep2', 'ls', 'stdev1', 'stdev2']:
+# 	run1_gaussian(dataset)
