@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 NOV 2014 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 NOV 2014 23:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -49,6 +49,16 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count88
 \c@subtable=\count89
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count90
+\sf@farskip=\skip43
+\sf@captopadj=\dimen110
+\sf@capskip=\skip44
+\sf@nearskip=\skip45
+\sf@top=\skip46
+\sf@bottom=\skip47
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -72,18 +82,18 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count90
+\Gread@gobject=\count91
 ))
-\Gin@req@height=\dimen110
-\Gin@req@width=\dimen111
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen112
+\bigstrutjot=\dimen113
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen113
-\WF@size=\dimen114
-\c@WF@wrappedlines=\count91
+\wrapoverhang=\dimen114
+\WF@size=\dimen115
+\c@WF@wrappedlines=\count92
 \WF@box=\box26
 \WF@everypar=\toks15
 Package: wrapfig 2003/01/31  v 3.6
@@ -94,7 +104,7 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip43
+\@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -103,49 +113,49 @@ Package: amstext 2000/06/29 v2.01
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
-\ex@=\dimen115
+\ex@=\dimen116
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen116
+\pmbraise@=\dimen117
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count92
+\inf@bad=\count93
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count93
-\leftroot@=\count94
+\uproot@=\count94
+\leftroot@=\count95
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count95
-\DOTSCASE@=\count96
+\classnum@=\count96
+\DOTSCASE@=\count97
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
-\big@size=\dimen117
+\big@size=\dimen118
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count97
-\c@MaxMatrixCols=\count98
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
-\c@parentequation=\count99
-\dspbrk@lvl=\count100
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
 \tag@help=\toks18
-\row@=\count101
-\column@=\count102
-\maxfields@=\count103
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
 \andhelp@=\toks19
-\eqnshift@=\dimen118
-\alignsep@=\dimen119
-\tagshift@=\dimen120
-\tagwidth@=\dimen121
-\totwidth@=\dimen122
-\lineht@=\dimen123
+\eqnshift@=\dimen119
+\alignsep@=\dimen120
+\tagshift@=\dimen121
+\tagwidth@=\dimen122
+\totwidth@=\dimen123
+\lineht@=\dimen124
 \@envbody=\toks20
-\multlinegap=\skip44
-\multlinetaggap=\skip45
+\multlinegap=\skip49
+\multlinetaggap=\skip50
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -155,18 +165,18 @@ Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen124
-\extrarowheight=\dimen125
+\col@sep=\dimen125
+\extrarowheight=\dimen126
 \NC@list=\toks22
-\extratabsurround=\skip46
-\backup@length=\skip47
+\extratabsurround=\skip51
+\backup@length=\skip52
 )
-\TX@col@width=\dimen126
-\TX@old@table=\dimen127
-\TX@old@col=\dimen128
-\TX@target=\dimen129
-\TX@delta=\dimen130
-\TX@cols=\count104
+\TX@col@width=\dimen127
+\TX@old@table=\dimen128
+\TX@old@col=\dimen129
+\TX@target=\dimen130
+\TX@delta=\dimen131
+\TX@cols=\count105
 \TX@ftn=\toks23
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
@@ -183,50 +193,51 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count105
-\Gm@cntv=\count106
-\c@Gm@tempcnt=\count107
-\Gm@bindingoffset=\dimen131
-\Gm@wd@mp=\dimen132
-\Gm@odd@mp=\dimen133
-\Gm@even@mp=\dimen134
-\Gm@layoutwidth=\dimen135
-\Gm@layoutheight=\dimen136
-\Gm@layouthoffset=\dimen137
-\Gm@layoutvoffset=\dimen138
+\Gm@cnth=\count106
+\Gm@cntv=\count107
+\c@Gm@tempcnt=\count108
+\Gm@bindingoffset=\dimen132
+\Gm@wd@mp=\dimen133
+\Gm@odd@mp=\dimen134
+\Gm@even@mp=\dimen135
+\Gm@layoutwidth=\dimen136
+\Gm@layoutheight=\dimen137
+\Gm@layouthoffset=\dimen138
+\Gm@layoutvoffset=\dimen139
 \Gm@dimlist=\toks24
 )
 (./homework2.aux)
 \openout1 = `homework2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen139
+\scratchcounter=\count109
+\scratchdimen=\dimen140
 \scratchbox=\box29
-\nofMPsegments=\count109
-\nofMParguments=\count110
+\nofMPsegments=\count110
+\nofMParguments=\count111
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen140
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen141
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -312,37 +323,62 @@ e
 <exercise1-1.pdf, id=13, 433.62pt x 289.08pt>
 File: exercise1-1.pdf Graphic file (type pdf)
  <use exercise1-1.pdf>
-Package pdftex.def Info: exercise1-1.pdf used on input line 104.
-(pdftex.def)             Requested size: 455.30013pt x 303.54736pt.
+Package pdftex.def Info: exercise1-1.pdf used on input line 106.
+(pdftex.def)             Requested size: 209.4411pt x 139.63019pt.
+
+Overfull \hbox (54.29048pt too wide) in paragraph at lines 112--129
+ [][] 
+ []
 
 <1-2-smallOverlap.pdf, id=14, 578.16pt x 216.81pt>
 File: 1-2-smallOverlap.pdf Graphic file (type pdf)
  <use 1-2-smallOverlap.pdf>
-Package pdftex.def Info: 1-2-smallOverlap.pdf used on input line 113.
-(pdftex.def)             Requested size: 455.30013pt x 170.73546pt.
+Package pdftex.def Info: 1-2-smallOverlap.pdf used on input line 138.
+(pdftex.def)             Requested size: 209.4411pt x 78.53784pt.
 
 <1-2-bigOverlap.pdf, id=15, 578.16pt x 216.81pt>
 File: 1-2-bigOverlap.pdf Graphic file (type pdf)
  <use 1-2-bigOverlap.pdf>
-Package pdftex.def Info: 1-2-bigOverlap.pdf used on input line 120.
-(pdftex.def)             Requested size: 455.30013pt x 170.73546pt.
+Package pdftex.def Info: 1-2-bigOverlap.pdf used on input line 144.
+(pdftex.def)             Requested size: 209.4411pt x 78.53784pt.
 
 <1-2-ls.pdf, id=16, 578.16pt x 216.81pt>
 File: 1-2-ls.pdf Graphic file (type pdf)
  <use 1-2-ls.pdf>
-Package pdftex.def Info: 1-2-ls.pdf used on input line 127.
-(pdftex.def)             Requested size: 455.30013pt x 170.73546pt.
+Package pdftex.def Info: 1-2-ls.pdf used on input line 151.
+(pdftex.def)             Requested size: 209.4411pt x 78.53784pt.
 
 <1-2-nonSep2.pdf, id=17, 578.16pt x 216.81pt>
 File: 1-2-nonSep2.pdf Graphic file (type pdf)
  <use 1-2-nonSep2.pdf>
-Package pdftex.def Info: 1-2-nonSep2.pdf used on input line 134.
-(pdftex.def)             Requested size: 455.30013pt x 170.73546pt.
- [2 <./exercise1-1.pdf>] [3]
+Package pdftex.def Info: 1-2-nonSep2.pdf used on input line 157.
+(pdftex.def)             Requested size: 209.4411pt x 78.53784pt.
 
-LaTeX Warning: Text page 4 contains only floats.
+<1-3-c-margin.pdf, id=18, 578.16pt x 433.62pt>
+File: 1-3-c-margin.pdf Graphic file (type pdf)
+ <use 1-3-c-margin.pdf>
+Package pdftex.def Info: 1-3-c-margin.pdf used on input line 171.
+(pdftex.def)             Requested size: 209.4411pt x 157.0757pt.
 
-[4 <./1-2-smallOverlap.pdf> <./1-2-bigOverlap.pdf
+<1-3-support-vectors.pdf, id=19, 578.16pt x 433.62pt>
+File: 1-3-support-vectors.pdf Graphic file (type pdf)
+
+<use 1-3-support-vectors.pdf>
+Package pdftex.def Info: 1-3-support-vectors.pdf used on input line 177.
+(pdftex.def)             Requested size: 209.4411pt x 157.0757pt.
+ [2 <./exercise1-1.pdf>]
+Overfull \hbox (104.33997pt too wide) in paragraph at lines 203--207
+[]\OT1/cmr/m/n/10 3.1: * https://piazza.com/class/hzdfawvtilo7hf?cid=434 * l2 r
+eg-u-lar-iza-tion, lin-ear case * http://blog.datumbox.com/machine-
+ []
+
+
+Overfull \hbox (13.72858pt too wide) in paragraph at lines 221--233
+[]\OT1/cmr/m/n/10 3.2 - mul-ti-class svm: * used http://scikit-learn.org/stable
+/modules/generated/sklearn.svm.linearsvc.html
+ []
+
+[3 <./1-2-smallOverlap.pdf> <./1-2-bigOverlap.pdf
 
 pdfTeX warning: pdflatex (file ./1-2-bigOverlap.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
@@ -350,39 +386,44 @@ dfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./1-2-ls.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
->]
-Overfull \hbox (107.8122pt too wide) in paragraph at lines 209--213
-[]\OT1/cmr/m/n/10 3.1: * https://piazza.com/class/hzdfawvtilo7hf?cid=434 * L2 r
-eg-u-lar-iza-tion, lin-ear case * http://blog.datumbox.com/machine-
- []
+> <./1-2-nonSep2.pdf
 
+pdfTeX warning: pdflatex (file ./1-2-nonSep2.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <./1-3-c-margin.pdf
 
-Overfull \hbox (26.81194pt too wide) in paragraph at lines 227--239
-[]\OT1/cmr/m/n/10 3.2 - mul-ti-class SVM: * used http://scikit-learn.org/stable
-/modules/generated/sklearn.svm.LinearSVC.html
- []
+pdfTeX warning: pdflatex (file ./1-3-c-margin.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+> <./1-3-support-vectors.pdf
 
-[5 <./1-2-nonSep2.pdf>] (./homework2.aux) ) 
+pdfTeX warning: pdflatex (file ./1-3-support-vectors.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>] [4] (./homework2.aux) ) 
 Here is how much of TeX's memory you used:
- 3850 strings out of 493117
- 57922 string characters out of 6135433
- 136144 words of memory out of 5000000
- 7277 multiletter control sequences out of 15000+600000
- 4699 words of font info for 18 fonts, out of 8000000 for 9000
+ 3993 strings out of 493117
+ 60368 string characters out of 6135433
+ 136894 words of memory out of 5000000
+ 7407 multiletter control sequences out of 15000+600000
+ 6972 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,13n,38p,532b,269s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb>
-Output written on homework2.pdf (5 pages, 247026 bytes).
+ 38i,13n,38p,1149b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+
+Output written on homework2.pdf (4 pages, 384066 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 206 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
