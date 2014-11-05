@@ -94,11 +94,11 @@ def support_vectors():
 	plt.show()
 
 def sparsity():
-	l = np.array([0, 1e-3, 0.01, 0.1, 1, 10])
-	small_overlap_linear = np.array([0, 9, 4, 4, 25, 101])
-	big_overlap_linear = np.array([0, 77, 27, 66, 168, 6])
-	ls_linear = np.array([])
-	nonSep2_linear = np.array([])
+	l = np.array([0, 1e-3, 0.01, 0.1, 1])#, 10])
+	small_overlap_linear = np.array([1.0, .72, .8, .81, .93])#, 0]) #training err 0.09, test 0.13
+	big_overlap_linear = np.array([.995, 0.07, .205, .305, .07])#, .815]) # training err .275, test err .085 
+	ls_linear = np.array([1.0, 0.9875, .89, .955, .7925])#, 0]) # training error 0, test err 0.005
+	nonSep2_linear = np.array([.625, .02, .005, .0375, 0])#, 0]) # training err .49, test err .52
 
 	# small_overlap_gaussian_0001 = np.array([0.76, 0.076, 0.007, 0.0007, 7e-5])
 	# small_overlap_gaussian_01 = np.array([0.76, 0.076, 0.007, 0.0007, 7e-5])
@@ -127,11 +127,11 @@ def sparsity():
 	ax.set_ylabel(r'Sparsity as a function of $\lambda$')
 	ax.set_xscale('log')
 	ax.set_yscale('linear')
-	ax.set_xticks([])
-	ax.set_yticks([])
+	# ax.set_xticks([])
+	# ax.set_yticks([])
 	# ax.set_ylim([0, 420])
 
-	ax.legend()
+	# ax.legend()
 
 	plt.show()
 

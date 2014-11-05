@@ -184,19 +184,38 @@ As $c$ increases, the geometric margin decreases, as shown for various values of
 
 \section{Exercise 2: logistic regression}
 
-The kernelized form of the regression objective for logistic regression having all data with $y^{(i)} \in {-1, 1}$ is:
+The kernelized form of the regression objective for logistic regression having all data with $y^{(i)} \in {-1, 1}$ is written in Equation \ref{eq:kernelized-lr}. $K$ is the kernel function, which in the linear case is $x^{(i')} \cdot x^{(i)}$. For accurate results, it was important to set the tolerance of the solver to $1\e^{-12}$
 
 \begin{subequations}
 	\begin{align}
-		\text{NLL}(\alpha, w_0) = \sum_i \log \left(1 + e^{-y^{(i)}\left(\displaystyle\sum_{i'} \alpha_{i'} x^{(i')} \cdot x^{(i)} + w_0\right)}\right)
+		\text{NLL}(\alpha, w_0) = \sum_i \log \left(1 + e^{-y^{(i)}\left(\displaystyle\sum_{i'} \alpha_{i'} K(x^{(i')}, x^{(i)}) + w_0\right)}\right)
 	\end{align}
+	\label{eq:kernelized-lr}
 \end{subequations}
 
-Using L1 regularization on the $\alpha$ values
+% \begin{figure}[!ht]
+% \begin{subfigure}[b]{0.46\textwidth}
+% 	\centering
+% 	\includegraphics[width=\textwidth]{exercise2-2.pdf}
+% 	\caption{ls}
+% 	\label{fig:2-2}
+% \end{subfigure}
+% \begin{subfigure}[b]{0.46\textwidth}
+% 	\centering
+% 	\includegraphics[width=\textwidth]{exercise2-3.pdf}
+% 	\caption{nonSep2}
+% 	\label{fig:2-3}
+% \end{subfigure}
+% \end{figure}
+
+Here I am defining sparsity as the percentage of points in the training data that are used as support vectors (with alpha values greater than $1\e^{-5}$. Using L1 regularization with parameter $\lambda$ on the $\alpha$ values to ensure sparsity, the relationship between $\lambda$ and sparsity is shown in Figure \ref{fig:2-2}. In general, the sparsity follows a U-pattern, sometimes in two places, as $\lambda$ increases. The optimal value of $\lambda$ is the one that in the separable case makes the sparsity the lowest for the smallest value of $\lambda$. As $\lambda$ gets too large, the error on the training and testing sets increases too much, so it is better to choose a smaller value of $\lambda$ that allows for low training / testing error. 
+
+
+Gaussian kernels in general work much better on non-separable data. SHOW A GRAPH HERE.
 
 2.2: 
 * do training set over some values of lambda
-* use that to pick lambda
+* use that to pick lambda based on sparsity
 * test on `validation' data and report an error value
 
 2.3:

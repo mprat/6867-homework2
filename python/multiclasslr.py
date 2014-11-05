@@ -5,7 +5,7 @@ import numpy as np
 kaggle = False
 
 def linear_kernel(x1, x2):
-    return np.dot(x1, x2.T)
+    return np.dot(x1, x2)
 
 def gaussian_kernel_general(x, y, beta):
 	if len(x.shape) > 1:
