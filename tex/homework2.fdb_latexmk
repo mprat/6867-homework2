@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1415160971 "homework2.tex" "homework2.pdf" "homework2" 1415160972
+["pdflatex"] 1415160971 "homework2.tex" "homework2.pdf" "homework2" 1415201119
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
@@ -46,7 +46,7 @@
   "1-3-support-vectors.pdf" 1415157619 116270 731497ab571996bf7f8cf98687ab1ee6 ""
   "exercise1-1.pdf" 1415133321 12156 7f78d712785e130af9b4e891876294f0 ""
   "homework2.aux" 1415160972 1098 acae8836ee5a0252c27c3dbc76c87bf1 ""
-  "homework2.tex" 1415160970 9470 e964772e30a370cad124f5aa9076eb2c ""
+  "homework2.tex" 1415201118 9470 e964772e30a370cad124f5aa9076eb2c ""
   (generated)
   "homework2.pdf"
   "homework2.log"
