@@ -238,6 +238,10 @@ def error(truth, prediction):
 def bfgs_callback(params):
 	print params
 
+def normalize(x):
+	scaled = x - x.min(axis = 0)
+	return scaled / scaled.max(axis = 0)
+
 if kaggle:
 	name = 'kaggle_train'
 	data = np.loadtxt('../problemset/HW2_handout/data/'+name+'.csv', delimiter=',', skiprows=1)
@@ -309,7 +313,7 @@ if kaggle:
 	predictions = predictor(alphas, w0, linear_kernel, x_train)
 	print "error = ", error(y_train, predictions)
 else:
-	name = 'stdev1'
+	name = 'bigOverlap'
 	train = np.loadtxt('../problemset/HW2_handout/data/data_'+name+'_train.csv')
 	test = np.loadtxt('../problemset/HW2_handout/data/data_'+name+'_test.csv')
 
@@ -317,11 +321,13 @@ else:
 	# train = np.loadtxt('../problemset/HW2_handout/data/'+name+'.csv')
 	# test = np.loadtxt('../problemset/HW2_handout/data/'+name+'.csv')
 
-
 	y_train = train[:, -1].copy()
 	x_train = train[:, :-1].copy()
+	x_train = normalize(x_train)
+
 	y_test = test[:, -1].copy()
 	x_test = test[:, :-1].copy()
+	x_test = normalize(x_test)
 
 	c = 2
 
@@ -334,13 +340,13 @@ else:
 	def gaussian(x1, x2):
 		return gaussian_kernel_general(x1, x2, beta)
 
-	kernel = gaussian
+	kernel = linear_kernel
 
 	best_alphas = 0
 	best_w0 = 0
 
 	# for l in [0, 1e-4, 1e-3, 1e-2, 1e-1, 0.5, 1, 10]:
-	for l in [0, 0.5, 1, 10]:
+	for l in [0]:
 		def nll_multi_train(params):
 		    x = x_train
 		    y = y_train
@@ -353,7 +359,7 @@ else:
 
 		# print nll_multi_train(start)
 #
-		all_output = scipy.optimize.fmin_bfgs(nll_multi_train, start, full_output=True, gtol=1e-12, maxiter=2)
+		all_output = scipy.optimize.fmin_bfgs(nll_multi_train, start, full_output=True, gtol=1e-12, maxiter=3)
 		alphas_and_w0 = all_output[0]
 		alphas_and_w0 = alphas_and_w0.reshape((-1, c))
 		alphas = alphas_and_w0[:-1]

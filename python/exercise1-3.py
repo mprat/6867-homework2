@@ -61,7 +61,7 @@ def to_class_func(w):
 def error_rate(x, y, w):
     return np.sum(np.array([np.sign(to_class_func(w)(n)) for n in x]) != y) / float(len(x))
 
-def train_validate(name, c, kernel_function):
+def train_validate(name, c, kernel_function, beta=0):
 # name = 'bigOverlap'
     print '======Training======'
     # load data from csv files
@@ -120,7 +120,9 @@ def train_validate(name, c, kernel_function):
     ax2.set_yticks([])
 
     plt.subplots_adjust(wspace=0)
-    plt.show()
+    # plt.show()
+
+    fig.savefig('../tex/1-3-'+name+'-'+str(c)+'-'+str(beta)+'.pdf', bbox_inches='tight')
 
 def run1_linear(dataset):
 	for c in [0.01, 0.1, 1, 10, 100]:
@@ -129,24 +131,24 @@ def run1_linear(dataset):
 def run1_gaussian(dataset):
 	# for dataset in ['smallOverlap', 'bigOverlap', 'nonSep2', 'ls']:
     for c in [0.01, 0.1, 1, 10, 100]:
-        for beta in [0.0001, 0.001, 0.1, 0.15, 0.25]:
+        for beta in [0.0001, 0.001, 0.1, 0.15, 0.25, 0.5, 1]:
             def gaussian_kernel(x, y):
                 return gaussian_kernel_general(x, y, beta)
 
-            print "==========================="
+            # print "==========================="
             print "==========================="
             print "Dataset =", dataset, " c = ", c, " beta = ", beta
+            # print "==========================="
             print "==========================="
-            print "==========================="
-            train_validate(dataset, c, gaussian_kernel)
+            train_validate(dataset, c, gaussian_kernel, beta)
             print
-            print
+            # print
 
 def run_linear_all():
 	for dataset in ['smallOverlap', 'bigOverlap', 'nonSep2', 'ls']:
 		print "Dataset = ", dataset
 		run1_linear(dataset)
 
-def run_gaussian_all():
-	for dataset in ['smallOverlap', 'bigOverlap', 'nonSep2', 'ls']:
-		run1_gaussian(dataset)
+# def run_gaussian_all():
+for dataset in ['smallOverlap', 'bigOverlap', 'nonSep2', 'ls', 'stdev1', 'stdev2']:
+	run1_gaussian(dataset)

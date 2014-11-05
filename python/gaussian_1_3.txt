@@ -1,0 +1,2310 @@
+===========================
+Dataset = smallOverlap  c =  0.01  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.01
+Geometric margin =  0.760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.01  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.01
+Geometric margin =  0.760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.01  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.01
+Geometric margin =  0.760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.01  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.01
+Geometric margin =  0.760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.01  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.01
+Geometric margin =  0.760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.01  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.01
+Geometric margin =  0.760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.01  beta =  1
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.01
+Geometric margin =  0.760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.1
+Geometric margin =  0.0760031711108
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.1
+Geometric margin =  0.0760031711108
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.1
+Geometric margin =  0.0760031711108
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.1
+Geometric margin =  0.0760031711108
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.1
+Geometric margin =  0.0760031711108
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.1
+Geometric margin =  0.0760031711108
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  0.1  beta =  1
+===========================
+======Training======
+Number of support vectors =  100
+c =  0.1
+Geometric margin =  0.0760031711108
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  100
+c =  1
+Geometric margin =  0.00760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  100
+c =  1
+Geometric margin =  0.00760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  100
+c =  1
+Geometric margin =  0.00760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  100
+c =  1
+Geometric margin =  0.00760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  100
+c =  1
+Geometric margin =  0.00760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  100
+c =  1
+Geometric margin =  0.00760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  1  beta =  1
+===========================
+======Training======
+Number of support vectors =  100
+c =  1
+Geometric margin =  0.00760031711105
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  10  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  100
+c =  10
+Geometric margin =  0.000760031711119
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  10  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  100
+c =  10
+Geometric margin =  0.000760031711119
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  10  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  100
+c =  10
+Geometric margin =  0.000760031711119
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  10  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  100
+c =  10
+Geometric margin =  0.000760031711119
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  10  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  100
+c =  10
+Geometric margin =  0.000760031711119
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  10  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  100
+c =  10
+Geometric margin =  0.000760031711119
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  10  beta =  1
+===========================
+======Training======
+Number of support vectors =  100
+c =  10
+Geometric margin =  0.000760031711119
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  100  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  100
+c =  100
+Geometric margin =  7.60031711121e-05
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  100  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  100
+c =  100
+Geometric margin =  7.60031711121e-05
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  100  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  100
+c =  100
+Geometric margin =  7.60031711121e-05
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  100  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  100
+c =  100
+Geometric margin =  7.60031711121e-05
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  100  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  100
+c =  100
+Geometric margin =  7.60031711121e-05
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  100  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  100
+c =  100
+Geometric margin =  7.60031711121e-05
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = smallOverlap  c =  100  beta =  1
+===========================
+======Training======
+Number of support vectors =  100
+c =  100
+Geometric margin =  7.60031711121e-05
+Error rate train =  0.26
+==Validation==
+Error rate validate =  0.25
+
+===========================
+Dataset = bigOverlap  c =  0.01  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.01
+Geometric margin =  0.440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.01  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.01
+Geometric margin =  0.440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.01  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.01
+Geometric margin =  0.440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.01  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.01
+Geometric margin =  0.440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.01  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.01
+Geometric margin =  0.440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.01  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.01
+Geometric margin =  0.440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.01  beta =  1
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.01
+Geometric margin =  0.440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.1
+Geometric margin =  0.0440204406887
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.1
+Geometric margin =  0.0440204406887
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.1
+Geometric margin =  0.0440204406887
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.1
+Geometric margin =  0.0440204406887
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.1
+Geometric margin =  0.0440204406887
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.1
+Geometric margin =  0.0440204406887
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  0.1  beta =  1
+===========================
+======Training======
+Number of support vectors =  200
+c =  0.1
+Geometric margin =  0.0440204406887
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  200
+c =  1
+Geometric margin =  0.00440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  200
+c =  1
+Geometric margin =  0.00440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  200
+c =  1
+Geometric margin =  0.00440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  200
+c =  1
+Geometric margin =  0.00440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  200
+c =  1
+Geometric margin =  0.00440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  200
+c =  1
+Geometric margin =  0.00440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  1  beta =  1
+===========================
+======Training======
+Number of support vectors =  200
+c =  1
+Geometric margin =  0.00440204406885
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  10  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  200
+c =  10
+Geometric margin =  0.000440204406893
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  10  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  200
+c =  10
+Geometric margin =  0.000440204406893
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  10  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  200
+c =  10
+Geometric margin =  0.000440204406893
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  10  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  200
+c =  10
+Geometric margin =  0.000440204406893
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  10  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  200
+c =  10
+Geometric margin =  0.000440204406893
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  10  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  200
+c =  10
+Geometric margin =  0.000440204406893
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  10  beta =  1
+===========================
+======Training======
+Number of support vectors =  200
+c =  10
+Geometric margin =  0.000440204406893
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  100  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  200
+c =  100
+Geometric margin =  4.40204406894e-05
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  100  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  200
+c =  100
+Geometric margin =  4.40204406894e-05
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  100  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  200
+c =  100
+Geometric margin =  4.40204406894e-05
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  100  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  200
+c =  100
+Geometric margin =  4.40204406894e-05
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  100  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  200
+c =  100
+Geometric margin =  4.40204406894e-05
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  100  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  200
+c =  100
+Geometric margin =  4.40204406894e-05
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = bigOverlap  c =  100  beta =  1
+===========================
+======Training======
+Number of support vectors =  200
+c =  100
+Geometric margin =  4.40204406894e-05
+Error rate train =  0.3
+==Validation==
+Error rate validate =  0.255
+
+===========================
+Dataset = nonSep2  c =  0.01  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  3.00002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.01  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  3.00002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.01  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  3.00002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.01  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  3.00002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.01  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  3.00002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.01  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  3.00002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.01  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  3.00002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.300002896132
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.300002896132
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.300002896132
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.300002896132
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.300002896132
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.300002896132
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  0.1  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.300002896132
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.0300002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.0300002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.0300002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.0300002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.0300002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.0300002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  1  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.0300002896131
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  10  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00300002896136
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  10  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00300002896136
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  10  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00300002896136
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  10  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00300002896136
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  10  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00300002896136
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  10  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00300002896136
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  10  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00300002896136
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  100  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  0.000300002896137
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  100  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  0.000300002896137
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  100  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  0.000300002896137
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  100  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  0.000300002896137
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  100  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  0.000300002896137
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  100  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  0.000300002896137
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = nonSep2  c =  100  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  0.000300002896137
+Error rate train =  0.48
+==Validation==
+Error rate validate =  0.4975
+
+===========================
+Dataset = ls  c =  0.01  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.01  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.01  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.01  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.01  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.01  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.01  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.0207405961277
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.0207405961277
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.0207405961277
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.0207405961277
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.0207405961277
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.0207405961277
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  0.1  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.0207405961277
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.00207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.00207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.00207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.00207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.00207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.00207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  1  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.00207405961276
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  10  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00020740596128
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  10  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00020740596128
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  10  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00020740596128
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  10  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00020740596128
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  10  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00020740596128
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  10  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00020740596128
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  10  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  0.00020740596128
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  100  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  2.0740596128e-05
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  100  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  2.0740596128e-05
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  100  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  2.0740596128e-05
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  100  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  2.0740596128e-05
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  100  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  2.0740596128e-05
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  100  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  2.0740596128e-05
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = ls  c =  100  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  2.0740596128e-05
+Error rate train =  0.0625
+==Validation==
+Error rate validate =  0.0775
+
+===========================
+Dataset = stdev1  c =  0.01  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.01  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.01  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.01  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.01  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.01  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.01  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00893592881898
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00893592881898
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00893592881898
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00893592881898
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00893592881898
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00893592881898
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  0.1  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00893592881898
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  1  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000893592881894
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  10  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.9359288191e-05
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  10  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.9359288191e-05
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  10  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.9359288191e-05
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  10  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.9359288191e-05
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  10  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.9359288191e-05
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  10  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.9359288191e-05
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  10  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.9359288191e-05
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  100  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.93592881913e-06
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  100  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.93592881913e-06
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  100  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.93592881913e-06
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  100  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.93592881913e-06
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  100  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.93592881913e-06
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  100  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.93592881913e-06
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev1  c =  100  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.93592881913e-06
+Error rate train =  0.0
+==Validation==
+Error rate validate =  0.005
+
+===========================
+Dataset = stdev2  c =  0.01  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.01  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.01  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.01  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.01  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.01  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.01  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.01
+Geometric margin =  0.0884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00884247442019
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00884247442019
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00884247442019
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00884247442019
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00884247442019
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00884247442019
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  0.1  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  0.1
+Geometric margin =  0.00884247442019
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  1  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  1  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  1  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  1  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  1  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  1  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  1  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  1
+Geometric margin =  0.000884247442015
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  10  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.84247442031e-05
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  10  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.84247442031e-05
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  10  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.84247442031e-05
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  10  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.84247442031e-05
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  10  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.84247442031e-05
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  10  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.84247442031e-05
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  10  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  10
+Geometric margin =  8.84247442031e-05
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  100  beta =  0.0001
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.84247442034e-06
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  100  beta =  0.001
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.84247442034e-06
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  100  beta =  0.1
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.84247442034e-06
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  100  beta =  0.15
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.84247442034e-06
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  100  beta =  0.25
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.84247442034e-06
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  100  beta =  0.5
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.84247442034e-06
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+
+===========================
+Dataset = stdev2  c =  100  beta =  1
+===========================
+======Training======
+Number of support vectors =  400
+c =  100
+Geometric margin =  8.84247442034e-06
+Error rate train =  0.095
+==Validation==
+Error rate validate =  0.07
+

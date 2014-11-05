@@ -14,7 +14,7 @@
 
 \begin{document}
 
-\section{Exercise 1}
+\section{Exercise 1: SVM}
 
 In the general case of solving a linear SVM with slack variables without a regularizer, the objective function is:
 
@@ -155,7 +155,7 @@ The error rates for the training and validation sets for different data sets is 
 \centering
 \begin{tabular}{c|c|c|c|c|c}
 Dataset 	 &	 $C$  & Geometric Margin & Support Vectors & Training & Validation \\ \hline
-smallOverlap & $0.01$ 	& $1.79$		& 70 			& $.26$ & $.25$ \\
+smallOverlap & $0.01$ 	& $1.79$		& 70 		& $.26$ & $.25$ \\
 			& $0.1$		& $.93$			& 37		& $.25$ & $.24$ \\
 			& $1$		& $.57$			& 24		& $.24$ & $.24$ \\
 			& $10$		& $.5611$		& 22 		& $.25$ & $.24$ \\
@@ -189,6 +189,24 @@ nonSep2 	& $0.01$ 	& $3.98$		& 399 		& $.48$ & $.50$ \\
 \caption{Error rates for training and validation sets with varying $C$, gaussian kernel}
 \label{tbl:1-3-gaussian}
 \end{table}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\textwidth]{1-3-c-margin.pdf}
+	\caption{Plot of the geometric margin as a function of $c$ for various kernels and datasets}
+	\label{fig:1-3-c-margin}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\textwidth]{1-3-support-vectors.pdf}
+	\caption{Plot of the number of support vectors as a function of $c$ for various kernels and datasets}
+	\label{fig:1-3-support-vectors}
+\end{figure}
+
+As the $C$ increases, the geometric margin decreases, as shown for various values of $C$, various kernels, and various datasets in Figure \ref{fig:1-3-c-margin}. This always happens as $C$ increases, because this means there can be more slack in the final SVM, which means the SVM will be more tolerable to incorrect classifications for inseparable data. The number of support vectors decreases as $C$ increases, as shown in Figure \ref{fig:1-3-support-vectors}. This means that the classifier is less overfit on the training data and will have smaller errors on the testing data. Choosing $C$ for maximizing the margin will yield a value of $C$ equal to zero, which is the same as having a hard-margin SVM that does not perform well on non-separable data. An alternate criteria for choosing $C$ could be the minimum testing error. 
+
+\section{Exercise 2: Logistic Regression}
 
 2.2: 
 * do training set over some values of lambda
