@@ -225,7 +225,7 @@ if kaggle:
 	for i in range(1, c + 1):
 	    indices_of_class = np.array(np.where(data[:, -1].astype(int) == i)).flatten()
 	    total_num_indices = len(indices_of_class)
-	    num_each = 50 # for all, total_num_indices / 3
+	    num_each = total_num_indices / 3 # for all, total_num_indices / 3
 	    random_indices = np.random.choice(indices_of_class, num_each, replace=False)
 	    train_indices.extend(random_indices)
 
@@ -306,7 +306,7 @@ if kaggle:
 	beta = best_b
 	min_err = 1e100
 
-	for l in [1e-3, 1e-2, 0.1, 0.5, 1]:
+	for l in [1e-6, 1e-5, 1e-4, 1e-3, 1e-2, 0.5]:
 		def gaussian(x1, x2):
 			return gaussian_kernel_general(x1, x2, beta)
 

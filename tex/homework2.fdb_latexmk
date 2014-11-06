@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1415241707 "homework2.tex" "homework2.pdf" "homework2" 1415241709
+["pdflatex"] 1415247419 "homework2.tex" "homework2.pdf" "homework2" 1415247421
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
@@ -42,15 +42,19 @@
   "1-2-nonSep2.pdf" 1415140605 43243 cf4e3285f8821e623197e1f12cc73b5c ""
   "1-3-c-margin.pdf" 1415156494 116395 ef28c25d190bc0855e2da099789387e9 ""
   "1-3-stdev1-1-0_15.pdf" 1415155015 56042 6bf9a135267887831db3d8845ac6bacb ""
+  "1-3-stdev2-0_01-0_1.pdf" 1415230666 95883 8ad4ebde592e96b32e9f20ccc9888dfc ""
+  "1-3-stdev2-0_01-linear.pdf" 1415247045 49608 9b132794a443307723e81e732909444b ""
   "1-3-stdev2-10-0_15.pdf" 1415155050 52691 935414c3035f0bf6324f7b0380205f91 ""
+  "1-3-stdev4-0_01-linear.pdf" 1415247128 52467 6a7bdee50474891b40d3b329fbbead70 ""
+  "1-3-stdev4-0_1-0_25-gaussian.pdf" 1415247321 57408 ea1fbe821f4b9620bc68eaf157925771 ""
   "1-3-support-vectors.pdf" 1415157619 116270 731497ab571996bf7f8cf98687ab1ee6 ""
   "exercise1-1.pdf" 1415133321 12156 7f78d712785e130af9b4e891876294f0 ""
   "exercise2-2.pdf" 1415229403 178069 a2ef99a41b07351100c28c0e1238c681 ""
   "exercise2-3-stdev4-gaussian.pdf" 1415228328 11881 e59dc56ef28ad68d5530aeda49e728ba ""
   "exercise2-3-stdev4-linear.pdf" 1415228623 9987 a0c262319c1f72640e55ca79e24ef477 ""
   "exercise2-4.pdf" 1415230431 177843 4a61cf9be35c7a4d25fb82875d09c0b0 ""
-  "homework2.aux" 1415241708 1632 db053e3ff0809cdc668f6f799acff298 ""
-  "homework2.tex" 1415241704 14106 0120bbdfb5fa156cc4df9dcb8a954fa1 ""
+  "homework2.aux" 1415247420 2037 23387a1ec7958ff625aa6147f1073301 ""
+  "homework2.tex" 1415247416 17416 9ad724f38175434129e03d364c98118d ""
   (generated)
   "homework2.pdf"
   "homework2.log"

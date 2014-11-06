@@ -1,19 +1,16 @@
 import numpy as np
 from cvxopt import matrix, solvers
 import matplotlib.pyplot as plt
+from sklearn.metrics.pairwise import rbf_kernel
 
 def linear_kernel(x, y):
     return np.dot(x, y.T)
 
-def gaussian_kernel(x, y):
-    beta = 1
-    return exp(-1*beta*np.linalg.norm(x - y))
-
 def gaussian_kernel_general(x, y, beta):
-	if len(x.shape) > 1:
-		return np.exp(-1*beta*np.linalg.norm(x - y, axis=1))
-	else:
-		return np.exp(-1*beta*np.linalg.norm(x - y))
+    if len(y.shape) < 2:
+        y = y.reshape((1, -1))
+    k =  rbf_kernel(x, y, beta)
+    return k.T
 
 def file_to_x_y(filename):
     data = np.loadtxt('../problemset/HW2_handout/data/' + filename)
@@ -100,7 +97,7 @@ def train_validate(name, c, kernel_function, beta=0):
     
     fig = plt.figure(figsize=(8, 3))
     ax1 = fig.add_subplot(121)
-    CS = ax1.contour(xx, yy, zz, [-1, 0, 1], colors = 'green', linestyles = 'solid', linewidths = 2)
+    CS = ax1.contour(xx, yy, zz, [0], colors = 'green', linestyles = 'solid', linewidths = 2)
 #     plt.clabel(CS, fontsize=9, inline=1)
 #     Plot the training points
     ax1.scatter(X_train[:, 0], X_train[:, 1], c=(1.-Y_train), s=50, cmap = plt.cm.cool)
@@ -110,7 +107,7 @@ def train_validate(name, c, kernel_function, beta=0):
     ax1.set_yticks([])
     
     ax2 = fig.add_subplot(122)
-    CS = ax2.contour(xx, yy, zz, [-1, 0, 1], colors = 'green', linestyles = 'solid', linewidths = 2)
+    CS = ax2.contour(xx, yy, zz, [0], colors = 'green', linestyles = 'solid', linewidths = 2)
 #     plt.clabel(CS, fontsize=9, inline=1)
 #     Plot the training points
     ax2.scatter(X_validate[:, 0], X_validate[:, 1], c=(1.-Y_validate), s=50, cmap = plt.cm.cool)
@@ -122,7 +119,7 @@ def train_validate(name, c, kernel_function, beta=0):
     plt.subplots_adjust(wspace=0)
     # plt.show()
 
-    fig.savefig('../tex/1-3-'+name+'-'+str(c)+'-'+str(beta)+'.pdf', bbox_inches='tight')
+    fig.savefig('../tex/1-3-'+name+'-'+str(c)+'-gaussian.pdf', bbox_inches='tight')
 
 def run1_linear(dataset):
 	for c in [0.01, 0.1, 1, 10, 100]:

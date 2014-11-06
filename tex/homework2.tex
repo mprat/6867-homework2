@@ -180,7 +180,49 @@ Using a Gaussian kernel at different bandwidths does not change the error rates 
 \end{subfigure}
 \end{figure}
 
-As $c$ increases, the geometric margin decreases, as shown for various values of $c$, various kernels, and various datasets in figure \ref{fig:1-3-c-margin}. this always happens as $c$ increases, because this means there can be more slack in the final svm, which means the svm will be more tolerable to incorrect classifications for inseparable data. the number of support vectors first decreases, then increases as $c$ increases, as shown in figure \ref{fig:1-3-support-vectors}. this means that the classifier is less overfit on the training data and will have smaller errors on the testing data. choosing $c$ for maximizing the margin will yield a value of $c$ equal to zero, which is the same as having a hard-margin svm that does not perform well on non-separable data. an alternate criteria for choosing $c$ could be the minimum number of support vectors (since the number of support vectors eventually increases with a higher value of $c$ as the classifier gets over-fit to the training data). Changing $c$ has almost no effect on the training error unless the data is highly non-separable.
+Extending the original Equation \ref{eq:singlesvm} to use kernels, the objective function becomes as written in Equation \ref{eq:singlesvmkernels}. Using the Gaussian kernel compared to the linear kernel is shown in Figures \ref{fig:1-3-1}, \ref{fig:1-3-2}, \ref{fig:1-3-3}, and \ref{fig:1-3-4} for two different non-separable datasets.
+
+\begin{subequations}
+\begin{align}
+	\underset{\alpha}{\text{minimize}}
+		& \quad -\sum_{i = 1}^n \alpha_i + \frac{1}{2} \sum_{i = 1}^n \sum_{j = 1}^n \alpha_i \alpha_j y^{(i)} y^{(j)} K(x^{(i)}, x^{(j)})) \\
+	\text{subject to}
+		& \quad 0 \leq \alpha_i \leq C \quad \forall i \,, \\
+		& \quad \sum_{i = 1}^n \alpha_i y^{(i)} = 0
+\end{align}
+\label{eq:singlesvmkernels}
+\end{subequations}
+
+\begin{figure}[!ht]
+\centering
+\begin{subfigure}[b]{0.46\textwidth}
+	\centering
+	\includegraphics[width=.8\textwidth]{1-3-stdev2-0_01-0_1.pdf}
+	\caption{stdev2 using a Gaussian Kernel}
+	\label{fig:1-3-1}
+\end{subfigure}
+\begin{subfigure}[b]{0.46\textwidth}
+	\centering
+	\includegraphics[width=.8\textwidth]{1-3-stdev2-0_01-linear.pdf}
+	\caption{stdev2 using a Linear Kernel, $c = 0.1$}
+	\label{fig:1-3-2}
+\end{subfigure}
+\\
+\begin{subfigure}[b]{0.46\textwidth}
+	\centering
+	\includegraphics[width=.8\textwidth]{1-3-stdev4-0_1-0_25-gaussian.pdf}
+	\caption{stdev4 using a Gaussian Kernel}
+	\label{fig:1-3-3}
+\end{subfigure}
+\begin{subfigure}[b]{0.46\textwidth}
+	\centering
+	\includegraphics[width=.8\textwidth]{1-3-stdev4-0_01-linear.pdf}
+	\caption{stdev4 using a Linear Kernel, $c = 0.1$}
+	\label{fig:1-3-4}
+\end{subfigure}
+\end{figure}
+
+As $c$ increases, the geometric margin decreases, as shown for various values of $c$, various kernels, and various datasets in figure \ref{fig:1-3-c-margin}. this always happens as $c$ increases, because this means there can be more slack in the final SVM, which means the SVM will be more tolerable to incorrect classifications for inseparable data. the number of support vectors first decreases, then increases as $c$ increases, as shown in figure \ref{fig:1-3-support-vectors}. this means that the classifier is less overfit on the training data and will have smaller errors on the testing data. choosing $c$ for maximizing the margin will yield a value of $c$ equal to zero, which is the same as having a hard-margin SVM that does not perform well on non-separable data. an alternate criteria for choosing $c$ could be the minimum number of support vectors (since the number of support vectors eventually increases with a higher value of $c$ as the classifier gets over-fit to the training data). Changing $c$ has almost no effect on the training error unless the data is highly non-separable.
 
 \section{Exercise 2: logistic regression}
 
@@ -240,18 +282,18 @@ Comparing SVMs to logistic regression in terms of sparsity, logistic regression 
 
 The form of the objective for kernelized multiclass logistic regression is the same as for the two-class case shown in Equation \ref{eq:kernelized-lr}, except that the $y$ values are $1 \times K$ vectors where $K$ is the total number of classes. All the entries in $y$ are $0$ except for the entry that corresponds to the class that $y$ belongs to, which is $1$. So if $x^{(i)}$ were in class $3$ out of a total of $5$ classes, $y^{(i)}$ would take on the value $[0, 0, 1, 0, 0]$. The resulting prediction function was then modified as shown in Equation \ref{eq:multiclass-lr}. So for each class $c$ there is a separate set of $\alpha$ and $w_0$ values, and the class that is predicted is the class who's $\alpha$ and $w_0$ values maximize the objective function.
 
-\begin{subequation}
+\begin{subequations}
 	\begin{align}
 		y = \underset{c}{\text{argmax}} \left(w_0 + \sum_i \alpha^c_i K(x^{(i)}, x_t)\right)
 	\end{align}
 	\label{eq:multiclass-lr}
-\end{subequation}
+\end{subequations}
 
-There were numerous problems in implementing logistic regression for multiclass, especially on running the Kaggle dataset. There were many features and many data points, so it was especially important not to have any operations involving for loops, doing everything with the optimized versions of Python's numpy / scipy library. Another trick I used was to use the $\logexpsum$ function from the scipy library to calculate the error in the objective function as needed. At all places possible, I used built-in functions in scipy and numpy to do any calculations rather than write it by hand. For most experiments with logistic regression, the regularization term was L1 regularization to keep the $\alpha$ values sparse. It was also important to always initialize the starting value of the minimization function to zeros rather than using numpy's built-in `empty' function for creating arrays. This is because using the `empty' function reuses empty places in memory (most likely taken by the coefficients from the previous run of the minimization), therefore causing the function to be stuck in a local minimum.
+There were numerous problems in implementing logistic regression for multiclass, especially on running the Kaggle dataset. There were many features and many data points, so it was especially important not to have any operations involving for loops, doing everything with the optimized versions of Python's numpy / scipy library. Another trick I used was to use the $\text{logexpsum}$ function from the scipy library to calculate the error in the objective function as needed. At all places possible, I used built-in functions in scipy and numpy to do any calculations rather than write it by hand. For most experiments with logistic regression, the regularization term was L1 regularization to keep the $\alpha$ values sparse. It was also important to always initialize the starting value of the minimization function to zeros rather than using numpy's built-in `empty' function for creating arrays. This is because using the `empty' function reuses empty places in memory (most likely taken by the coefficients from the previous run of the minimization), therefore causing the function to be stuck in a local minimum.
 
 Experimenting on small subsets of Kaggle data with linear and Gaussian kernels, it was immediately clear that with a Gaussian kernel and a relatively small number of data points (approximately $10$) and a Gaussian kernel, there can immediately be an error rate of $0.0$ on the validation set. Therefore, for all larger experiments, only the Gaussian kernel was used when doing multiclass logistic regression.
 
-In about 20-30 minutes of run time, I used all 54 features and 40 training samples from each class for a training and validation set, randomly selected without replacement. I used the training set to choose the optimal value of $\beta$ while holding $\lambda = 0$, then I used the validation set to choose the optimum value of $\lambda$, and finally tested on the rest of the un-chosen values of the dataset. After a few runs, the results were that the best $\beta$ value was $\beta = 2$ and the best $\lambda$ was $\lambda = $ for an error rate of $ $ on the entire dataset.
+In about 20-30 minutes of run time, I used all 54 features and 40 training samples from each class for a training and validation set, randomly selected without replacement. I used the training set to choose the optimal value of $\beta$ while holding $\lambda = 0$, then I used the validation set to choose the optimum value of $\lambda$, and finally tested on the rest of the un-chosen values of the dataset. After a few runs, the results were that the best $\beta$ value was $\beta = 2$ and the best $\lambda$ was $\lambda = 0.001$ for an error rate of $.83$ on the entire dataset.
 
 \subsection{Multiclass SVM}
 
