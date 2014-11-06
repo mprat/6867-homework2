@@ -184,11 +184,12 @@ As $c$ increases, the geometric margin decreases, as shown for various values of
 
 \section{Exercise 2: logistic regression}
 
-The kernelized form of the regression objective for logistic regression having all data with $y^{(i)} \in {-1, 1}$ is written in Equation \ref{eq:kernelized-lr}. $K$ is the kernel function, which in the linear case is $x^{(i')} \cdot x^{(i)}$. For accurate results, it was important to set the tolerance of the solver to $1e^{-12}$.
+The kernelized form of the regression objective and the associated prediction function I used for logistic regression having all data with $y^{(i)} \in {-1, 1}$ is written in Equation \ref{eq:kernelized-lr}. $K$ is the kernel function, which in the linear case is $x^{(i')} \cdot x^{(i)}$. For accurate results, it was important to set the tolerance of the solver to $1e^{-12}$.
 
 \begin{subequations}
 	\begin{align}
-		\text{NLL}(\alpha, w_0) = \sum_i \log \left(1 + e^{-y^{(i)}\left(\displaystyle\sum_{i'} \alpha_{i'} K(x^{(i')}, x^{(i)}) + w_0\right)}\right)
+		\text{NLL}(\alpha, w_0) &= \sum_i \log \left(1 + e^{-y^{(i)}\left(\displaystyle\sum_{i'} \alpha_{i'} K(x^{(i')}, x^{(i)}) + w_0\right)}\right) \\
+		y(x_t) &= \text{sgn}\left(w_0 + \sum_i \alpha_i K(x^{(i)}, x_t)\right)
 	\end{align}
 	\label{eq:kernelized-lr}
 \end{subequations}
@@ -235,37 +236,34 @@ Comparing SVMs to logistic regression in terms of sparsity, logistic regression 
 
 \section{Exercise 3: Multiclass LR and SVM}
 
+\subsection{Multiclass Logistic Regression}
 
+The form of the objective for kernelized multiclass logistic regression is the same as for the two-class case shown in Equation \ref{eq:kernelized-lr}, except that the $y$ values are $1 \times K$ vectors where $K$ is the total number of classes. All the entries in $y$ are $0$ except for the entry that corresponds to the class that $y$ belongs to, which is $1$. So if $x^{(i)}$ were in class $3$ out of a total of $5$ classes, $y^{(i)}$ would take on the value $[0, 0, 1, 0, 0]$. The resulting prediction function was then modified as shown in Equation \ref{eq:multiclass-lr}. So for each class $c$ there is a separate set of $\alpha$ and $w_0$ values, and the class that is predicted is the class who's $\alpha$ and $w_0$ values maximize the objective function.
 
-3.1:
-* https://piazza.com/class/hzdfawvtilo7hf?cid=434
-* l2 regularization, linear case
-* http://blog.datumbox.com/machine-learning-tutorial-the-multinomial-logistic-regression-softmax-regression/
+\begin{subequation}
+	\begin{align}
+		y = \underset{c}{\text{argmax}} \left(w_0 + \sum_i \alpha^c_i K(x^{(i)}, x_t)\right)
+	\end{align}
+	\label{eq:multiclass-lr}
+\end{subequation}
 
-* maybe need to save coefficients or predictions or something?
+There were numerous problems in implementing logistic regression for multiclass, especially on running the Kaggle dataset. There were many features and many data points, so it was especially important not to have any operations involving for loops, doing everything with the optimized versions of Python's numpy / scipy library. Another trick I used was to use the $\logexpsum$ function from the scipy library to calculate the error in the objective function as needed. At all places possible, I used built-in functions in scipy and numpy to do any calculations rather than write it by hand. For most experiments with logistic regression, the regularization term was L1 regularization to keep the $\alpha$ values sparse. It was also important to always initialize the starting value of the minimization function to zeros rather than using numpy's built-in `empty' function for creating arrays. This is because using the `empty' function reuses empty places in memory (most likely taken by the coefficients from the previous run of the minimization), therefore causing the function to be stuck in a local minimum.
 
-3.1 - lr:
-* 2 features, 100 pts, 2 classes, l = 0.01 -> error = .485
-* might need to randomly select subsets of data points
+Experimenting on small subsets of Kaggle data with linear and Gaussian kernels, it was immediately clear that with a Gaussian kernel and a relatively small number of data points (approximately $10$) and a Gaussian kernel, there can immediately be an error rate of $0.0$ on the validation set. Therefore, for all larger experiments, only the Gaussian kernel was used when doing multiclass logistic regression.
 
-* bigoverlap - error is .26 on test, ,.305 on training with l = 0.1
-* smalloverlap - error is .26 on test, .27 on training with l = 0.1
+In about 20-30 minutes of run time, I used all 54 features and 40 training samples from each class for a training and validation set, randomly selected without replacement. I used the training set to choose the optimal value of $\beta$ while holding $\lambda = 0$, then I used the validation set to choose the optimum value of $\lambda$, and finally tested on the rest of the un-chosen values of the dataset. After a few runs, the results were that the best $\beta$ value was $\beta = 2$ and the best $\lambda$ was $\lambda = $ for an error rate of $ $ on the entire dataset.
 
-* tips for getting numerics to work better:
-	* normalize data beforehand (then don't forget to re-normalize later)
-	* 
+\subsection{Multiclass SVM}
 
-3.2 - multiclass svm:
-* used http://scikit-learn.org/stable/modules/generated/sklearn.svm.linearsvc.html
-* can do this so fast it doesn't even make sense to try to do this by myself.
-* tried an array of l values with l1 loss (multiclasssvm.py), best l with random partitioning of data into 3 sets. rigorous stopping criteria
-* hinge loss, l2 regularization: 
-	* validation error: .187
-	* test error: .261
-	* l: 0.01
-* squared loss, l1 regularization:
-	* validation error: .143
-	* test error: .143
-	* l: 7e-7
+For multiclass SVM, it was also critical not to use any for loops or unnecessary mathematical operations. Using the one-versus-rest approach in which $K$ separate SVMs of the form written in Equation \ref{eq:singlesvm} are trained and optimized where the $k$th SVM is trained from class $C_k$ as positive examples and the rest of the classes as negative examples. The predictor is then of the form written in Equation \ref{eq:multiclassvm}.
+
+\begin{subequations}
+	\begin{align}
+		y = \underset{c}{\text{argmax}} y_k(x)
+	\end{align}
+	\label{eq:multiclassvm}
+\end{subequations}
+
+Because my implementation was a little bit too slow for testing in a reasonable amount of time, the `sklearn' Python package was used to perform SVM on the entire Kaggle Forest dataset. One major drawback of using this package the super-fast package did not implement Gaussian kernels, so the results given here are using linear kernels. Using hinge loss and L2 regularization, the optimal value for $\lambda$ was $0.01$ and the test error was $.261$ on the entire dataset. Using squared loss and L1 regularization, the optimal $\lambda$ was $1e^{-7}$ and the test error was $.143$.
 
 \end{document}
