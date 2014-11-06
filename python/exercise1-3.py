@@ -50,10 +50,15 @@ def get_svm_ws(x, y, c, kernel_function):
     # print "alphas = ", alphas
     # print "w0 = ", w0
     # print "w = ", w
-    return np.concatenate((w0, w))
+    return np.concatenate((w0, alphas))
 
 def to_class_func(w):
     return lambda n: w[0] + w[1] * n[0] + w[2] * n[1]
+
+def predictor(x_train, y_train, w, kernel_func, x_to_predict):
+    w0 = w[0]
+    alphas = w[1:]
+    kernel_func(x_train, x_to_predict)
 
 def error_rate(x, y, w):
     return np.sum(np.array([np.sign(to_class_func(w)(n)) for n in x]) != y) / float(len(x))
