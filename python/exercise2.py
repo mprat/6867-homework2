@@ -36,13 +36,6 @@ def linear_kernel(x1, x2):
 def gaussian_kernel_general(x, y, beta):
     if len(y.shape) < 2:
         y = y.reshape((1, -1))
-    # k = np.empty((len(x), len(y)))
-    # for i in range(len(x)):
-    #     for j in range(len(y)):
-    #         k[i][j] = np.exp(-1*beta*np.linalg.norm(x[i] - y[j], 2))
-    # return k.T
-    # pairwise_sq_dists = squareform(pdist(x, 'sqeuclidean'))
-    # return np.exp(-pairwise_sq_dists / s**2)
     k =  rbf_kernel(x, y, beta)
     return k.T
 
