@@ -80,7 +80,7 @@ if __name__ == '__main__':
     for i in range(1, cl + 1):
         indices_of_class = np.array(np.where(data[:, -1].astype(int) == i)).flatten()
         total_num_indices = len(indices_of_class)
-        num_each = 400 # for all, total_num_indices / 3
+        num_each = 500 # for all, total_num_indices / 3
         random_indices = np.random.choice(indices_of_class, num_each, replace=False)
         train_indices.extend(random_indices)
 
@@ -108,7 +108,7 @@ if __name__ == '__main__':
     best_c = 0
     min_err = 100
 
-    for c in [0.01, 0.1, 1]:
+    for c in [100]:
         all_predictors = []
 
         all_alphas = np.empty((cl, len(x_train)))
@@ -124,7 +124,7 @@ if __name__ == '__main__':
             y_train_temp[train_indices_neg] = -1
 
             # c = 1
-            beta = 1
+            beta = 5
             def gaussian_kernel(x, y):
                 return gaussian_kernel_general(x, y, beta)
 
