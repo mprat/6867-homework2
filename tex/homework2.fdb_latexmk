@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1415305294 "homework2.tex" "homework2.pdf" "homework2" 1415305297
+["pdflatex"] 1415332465 "homework2.tex" "homework2.pdf" "homework2" 1415332467
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
@@ -55,8 +55,8 @@
   "exercise2-3-stdev4-gaussian.pdf" 1415228328 11881 e59dc56ef28ad68d5530aeda49e728ba ""
   "exercise2-3-stdev4-linear.pdf" 1415228623 9987 a0c262319c1f72640e55ca79e24ef477 ""
   "exercise2-4.pdf" 1415230431 177843 4a61cf9be35c7a4d25fb82875d09c0b0 ""
-  "homework2.aux" 1415305296 3507 fc9c6cf9f869ff785f8bb067bf3b7d6a ""
-  "homework2.tex" 1415305293 27207 c04359716897a52a10b02b78f5306755 ""
+  "homework2.aux" 1415332466 3507 fc9c6cf9f869ff785f8bb067bf3b7d6a ""
+  "homework2.tex" 1415332462 27332 07a59e2c5ee00c33339d3b7870108e3b ""
   (generated)
   "homework2.pdf"
   "homework2.log"

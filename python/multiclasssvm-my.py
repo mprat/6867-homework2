@@ -80,7 +80,7 @@ if __name__ == '__main__':
     for i in range(1, cl + 1):
         indices_of_class = np.array(np.where(data[:, -1].astype(int) == i)).flatten()
         total_num_indices = len(indices_of_class)
-        num_each = 500 # for all, total_num_indices / 3
+        num_each = total_num_indices / 3 # for all, total_num_indices / 3
         random_indices = np.random.choice(indices_of_class, num_each, replace=False)
         train_indices.extend(random_indices)
 
@@ -107,66 +107,71 @@ if __name__ == '__main__':
 
     best_c = 0
     min_err = 100
+    best_b = 0
 
-    for c in [100]:
-        all_predictors = []
+    for c in [1, 10, 100, 1000]:
+        for beta in [10, 100, 1000, 10000]:
+            all_predictors = []
 
-        all_alphas = np.empty((cl, len(x_train)))
-        all_w0s = np.empty((cl, ))
-        all_support = np.empty((cl, x_train.shape[0], x_train.shape[1]))
-        all_y_train_temp = np.empty((cl, len(x_train)))
+            all_alphas = np.empty((cl, len(x_train)))
+            all_w0s = np.empty((cl, ))
+            all_support = np.empty((cl, x_train.shape[0], x_train.shape[1]))
+            all_y_train_temp = np.empty((cl, len(x_train)))
 
-        for i in range(1, cl + 1):
-            y_train_temp = y_train.copy()
-            train_indices_pos = np.array(np.where(y_train.astype(int) == i)).flatten()
-            train_indices_neg = np.array(np.where(y_train.astype(int) != i)).flatten()
-            y_train_temp[train_indices_pos] = 1
-            y_train_temp[train_indices_neg] = -1
+            for i in range(1, cl + 1):
+                y_train_temp = y_train.copy()
+                train_indices_pos = np.array(np.where(y_train.astype(int) == i)).flatten()
+                train_indices_neg = np.array(np.where(y_train.astype(int) != i)).flatten()
+                y_train_temp[train_indices_pos] = 1
+                y_train_temp[train_indices_neg] = -1
 
-            # c = 1
-            beta = 5
-            def gaussian_kernel(x, y):
-                return gaussian_kernel_general(x, y, beta)
+                # c = 1
+                # beta = 1000
+                def gaussian_kernel(x, y):
+                    return gaussian_kernel_general(x, y, beta)
 
-            kernel_function = gaussian_kernel
+                kernel_function = gaussian_kernel
 
-            [w0, alphas, x_support] = get_svm_ws(x_train, y_train_temp, c, kernel_function)
+                [w0, alphas, x_support] = get_svm_ws(x_train, y_train_temp, c, kernel_function)
 
-            all_alphas[i - 1] = alphas.flatten()
-            all_w0s[i - 1] = w0.flatten()
-            all_support[i - 1] = x_support
-            all_y_train_temp[i - 1] = y_train_temp.flatten()
+                all_alphas[i - 1] = alphas.flatten()
+                all_w0s[i - 1] = w0.flatten()
+                all_support[i - 1] = x_support
+                all_y_train_temp[i - 1] = y_train_temp.flatten()
 
-        all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[0], all_alphas[0], all_w0s[0], kernel_function, all_support[0], x_to_predict))
-        all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[1], all_alphas[1], all_w0s[1], kernel_function, all_support[1], x_to_predict))
-        all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[2], all_alphas[2], all_w0s[2], kernel_function, all_support[2], x_to_predict))
-        all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[3], all_alphas[3], all_w0s[3], kernel_function, all_support[3], x_to_predict))
-        all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[4], all_alphas[4], all_w0s[4], kernel_function, all_support[4], x_to_predict))
-        all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[5], all_alphas[5], all_w0s[5], kernel_function, all_support[5], x_to_predict))
-        all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[6], all_alphas[6], all_w0s[6], kernel_function, all_support[6], x_to_predict))
-        
-        preds_train = np.empty((cl, len(x_train)))
-        preds_val = np.empty((cl, len(x_validate)))
+            all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[0], all_alphas[0], all_w0s[0], kernel_function, all_support[0], x_to_predict))
+            all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[1], all_alphas[1], all_w0s[1], kernel_function, all_support[1], x_to_predict))
+            all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[2], all_alphas[2], all_w0s[2], kernel_function, all_support[2], x_to_predict))
+            all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[3], all_alphas[3], all_w0s[3], kernel_function, all_support[3], x_to_predict))
+            all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[4], all_alphas[4], all_w0s[4], kernel_function, all_support[4], x_to_predict))
+            all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[5], all_alphas[5], all_w0s[5], kernel_function, all_support[5], x_to_predict))
+            all_predictors.append(lambda x_to_predict: predictor(x_train, all_y_train_temp[6], all_alphas[6], all_w0s[6], kernel_function, all_support[6], x_to_predict))
+            
+            preds_train = np.empty((cl, len(x_train)))
+            preds_val = np.empty((cl, len(x_validate)))
 
-        for i in range(len(all_predictors)):
-            preds_train[i] = all_predictors[i](x_train)
-            preds_val[i] = all_predictors[i](x_validate)
+            for i in range(len(all_predictors)):
+                preds_train[i] = all_predictors[i](x_train)
+                preds_val[i] = all_predictors[i](x_validate)
 
-        preds_train = np.argmax(preds_train, axis = 0) + 1
-        preds_val = np.argmax(preds_val, axis = 0) + 1
+            preds_train = np.argmax(preds_train, axis = 0) + 1
+            preds_val = np.argmax(preds_val, axis = 0) + 1
 
-        train_err = error_rate(preds_train, y_train)
-        val_err = error_rate(preds_val, y_validate)
-        print "error train = ", train_err
-        print "error val = ", val_err
-        if val_err < min_err:
-            min_err = val_err
-            best_c = c
+            train_err = error_rate(preds_train, y_train)
+            val_err = error_rate(preds_val, y_validate)
+            print "error train = ", train_err
+            print "error val = ", val_err
+            if val_err < min_err:
+                min_err = val_err
+                best_c = c
+                best_b = beta
 
     print "best c = ", best_c
+    print "best beta = ", best_b
 
     # re-train on the best C
     c = best_c
+    beta = best_b
     all_predictors = []
     all_alphas = np.empty((cl, len(x_train)))
     all_w0s = np.empty((cl, ))
@@ -186,7 +191,6 @@ if __name__ == '__main__':
         y_train_temp[train_indices_neg] = -1
 
         # c = 1
-        beta = 1
         def gaussian_kernel(x, y):
             return gaussian_kernel_general(x, y, beta)
 
