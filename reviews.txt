@@ -1,0 +1,98 @@
+291:
+Total score: (4 + 5 + 4)/(5 + 5 + 5) = 4.3 / 5
+Exercise 1:
+Score: 4/5
+Good job explaining the formulation of the dual SVM with slack. It would have been nice to have written out the $H$ matrix in the example, but the formulation was clear from the information given.
+
+Good job explaining the graphs of the different datasets and what it means in the separable and non-separable cases. 
+
+For the kernelized SVM results, the pictures provide a good summary of the results, but it would be nice to include a sentence, just like in the linear SVM case, that explains the most salient point. It was also not explained how the values of $\beta$ were determined in the test, or what $\beta$ means in the context of a Gaussian kernel.
+
+The explanation for the relationship between $C$ and the geometric margin was well-explained, and the scenarios where an increase in $C$ does not increase the margin were well-addressed. However, a piece that is missing is the description of the relationship between the magnitude of w and the margin itself. It is not immediately obvious why the magnitude of w is a good substitute for the geometric margin, since the geometric margin is the minimum distance between a point and it's distance from the "wrong" margin. See page 13 of the Classification notes. So in fact the relationship described by the author with the magnitude of w is inverse to that of the geometric margin itself - this was not made obvious in the discussion in the paper.
+
+The discussion about the number of support vectors could have been more detailed, since there is almost no intuitive discussion given by the author.
+
+The scheme for choosing a $C$ given by the author is well-explained, and their own results using this method were also reported.
+
+A separate discussion using non-separable data was a good thing to point out by the author in a separate section to highlight the effectiveness of kernelized SVM.
+
+A component that was missing from the analysis was the inclusion of a $w_0$ term in the entire analysis - the issue was never addressed, not in the formulation of the dual SVM, the kernelized version, or in the discussion of margin. 
+
+
+Exercise 2:
+Score: 5/5
+The author does a good job showing the formula for negative log likelihood and it's regularization. However, the notation the author used is mixed up between the kernelized and the non-kernelized forms. It is not explained what $\alpha$ stands for in section 2.1 (it should be w), and the NLL function is a function of both w and $w_0$ rather than just w. 
+
+The plots showing the values of $\alpha$ as a function of $\lambda$ is a fantastic visual demonstration of sparsity - it is very easy to see for which values of $\lambda$ the results are sparse. The not-so-sparse results for $\lambda = 100$ are not explained, but the reader can guess that this is because L1 regularization does not guarantee sparsity. 
+
+The same notational problems cited before are true for the kernelized form of logistic regression. There is no discussion of the concrete effects of bandwidth on sparsity beyond the presentation in the graphs. 
+
+The discussion of sparsity for LR and SVM was well-thought-out and the reasons behind the differences were also addressed.
+
+
+Exercise 3:
+Score: 4/5
+For multiclass logistic regression, the notation was not explained thoroughly, and a jump to the kernelized form was not explained or explored. For multiclass SVM, the setup was very thoroughly explained. 
+
+The author does a good job in explaining the training and validation setups with the data manipulation, so the reader understands the limitations of the testing. Using the plot of a confusion matrix for the results of the classification is a great way of presenting the results of each classification, making it visually easy for the reader to understand the results. Simultaneously showing the classification results from all the methods in a single table is also a good presentation of the side-by-side results. 
+
+The results discussion based on the confusion matrix citing specific forest types and inferences about the methods used draw nicely from the reported results. 
+
+One aspect of the training / testing that the author does not talk about is choosing 50% of the samples making sure that there are equal numbers of all forest types in the training and testing sets. Some of these differences may account for the differences in accuracy on types 1, 2, 3 and 4,5,6,7 as observed by the author.
+
+The conclusions drawn by the author about the training set size are an interesting conclusion to draw about the variance of the actual dataset.
+
+Overall, good discussion of the different methods used. It would have been nice to also see a comparison of kernelized multiclass logistic regression in addition to the others used by the author. Even if this was not possible for computational reasons, a discussion about why this was not possible would be a good thing to include.
+
+
+292:
+Total score: (5 + 4 + 5) / (5 + 5 + 5) = 4.7 / 5
+Exercise 1: 
+Score: 5/5
+The step-by-step explanation of the dual SVM formulation is very easy to follow, especially with the specific derivation on the toy example. The discussion about the calculation of the $w_0$ term was also very detailed, even addressing the case where the calculation sets $w_0$ very close to zero.
+
+The experiments on the datasets were explained thoroughly, but the error rates reported were raw error rates rather than percentages, making it hard to understand exactly the effectiveness of the dataset. The discussion of the results is clear and well-thought-out. The discussion of the different datasets and their properties as separable and non-separable are taken into account when discussing error rates and number of support vectors, in addition to the geometric margin. 
+
+The extension from the linear SVM formulation to the kernelized formulation is well done, since the explanation was well set up from the first section. 
+
+In the explanation of kernels, the hyperparameter $\beta$ is well-addressed, and the experimental setup is well-discussed. The data tables for all the experiments are provided. 
+
+The discussion of geometric margin is good, since the abstraction from the norm of w and the actual margin is discussed, in addition to the discussion about $C$ and the relationship to this margin. 
+
+The suggestion of using error rate of the validation set to choose $C$ is discussed well. 
+
+Exercise 2:
+Score: 4 / 5
+The notation for the kernelized form of logistic regression is not clear - it is not immediately obvious that the values of $X^T \alpha$ need to be summed over in the calculations, and it is not exactly explained what $X^T$ stands for. 
+
+The discussion about the regularization (which is slightly different than suggested in the problem formulation) is well discussed. Showing the toy example makes the reader believe the formulation as well. 
+
+The parameter selection criteria was an interesting choice - number of misclassified points instead of the misclassification error. 
+
+The discussion about kernelized logistic regression and the optimization challenges give the reader a good understanding of the problems the authors faced in their implementation. The discussion about the choice of parameters based on the ratio of $\frac{\lambda}{\beta}$ was an interesting approach that was well explained. 
+
+It is a strange result that for stdev4 the misclassification error is so high while for the nonsep2 case the error is better. This suggests there might be a problem in the formulation of logistic regression in the kernelized form, since the classification error should be much better for the stdev4 case. 
+
+In the discussion about sparsity, one thing that was not addressed by the authors was the effect of regularization on sparsity - in the two different methods, different regularizations were posed, which means that the sparsity results can be different. The observation about support vectors close to the margins in both cases is well-addressed, though.
+
+One suggestion for the authors is to report misclassification error rather than raw number of points misclassified, because (1) different datasets may have different number of data points and (2) it is not immediately obvious what the effectiveness of the algorithm is without comparative percentages.
+
+Exercise 3:
+Score: 5/5
+For SVMs:
+The discussion about choosing test / training / validation sets on the Kaggle data was well discussed, addressing issues of "randomly" selecting data points yielding different results.
+
+The discussion about linear vs gaussian kernel was well-done as well, convincing the reader that testing with a linear kernel is almost not worth reporting results. 
+
+The optimization woes of the authors was not appropriately addressed - it was mentioned as a side comment that it took 5 hours of computation time to achieve the results, but no discussion for how this could be improved or why this was the case was discussed. 
+
+The accuracy results reported and the parameter selection was well-explained. The selection of $\beta$ values was also discussed and justified (to prevent overfitting). There was also a discussion about exactly how much training data was necessary to achieve good results which was well formulated.
+
+For logistic regression: 
+The mathematical derivation for multiclass LR was well explained, even though it was not clear that the values of $\alpha$ were summed over each time they were substituted for $w$. 
+
+The performance bottleneck discussion was well-formulated, but the issue of not selecting random samples could have been addressed to get better prediction errors. 
+
+It is surprising that kernelized multiclass logistic regression gave poorer results than linear multiclass logistic regression, and it is hard to know why this is the case because there is minimal discussion about this and no summarization of results. 
+
+The accuracy rates with the SVM classifier is discussed well. 
